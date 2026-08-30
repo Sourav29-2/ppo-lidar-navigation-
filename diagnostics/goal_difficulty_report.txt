@@ -1,0 +1,110 @@
+========================================
+GOAL DIFFICULTY ANALYSIS
+========================================
+
+Total scenarios:
+    150
+
+----------------------------------------
+DIFFICULTY DISTRIBUTION
+----------------------------------------
+EASY: 50 (33.3%)
+MODERATE: 40 (26.7%)
+HARD: 46 (30.7%)
+VERY_HARD: 9 (6.0%)
+UNKNOWN: 5 (3.3%)
+
+----------------------------------------
+PATH BLOCKAGE
+----------------------------------------
+Direct path clear: 55 (36.7%)
+Direct path blocked: 95 (63.3%)
+
+----------------------------------------
+RANDOM GOALS
+----------------------------------------
+Total: 20
+Direct path clear: 13
+Direct path blocked: 7
+
+Easy: 11
+Moderate: 3
+Hard: 4
+Very_hard: 0
+Unknown: 2
+
+----------------------------------------
+FOUR CORNERS
+----------------------------------------
+TOP_LEFT:
+    difficulty: HARD (majority)
+    direct path blocked %: 100.0%
+    mean detour ratio: 1.2225847572256954
+
+TOP_RIGHT:
+    difficulty: VERY_HARD (majority)
+    direct path blocked %: 100.0%
+    mean detour ratio: 1.1704226265338868
+
+BOTTOM_LEFT:
+    difficulty: MODERATE (majority)
+    direct path blocked %: 60.0%
+    mean detour ratio: 1.0909198082976004
+
+BOTTOM_RIGHT:
+    difficulty: EASY (majority)
+    direct path blocked %: 20.0%
+    mean detour ratio: 1.0572648564398262
+
+----------------------------------------
+PERFORMANCE BY DIFFICULTY
+----------------------------------------
+Difficulty   | Episodes | Success  | Collision | Timeout
+-------------------------------------------------------
+EASY         | 50       | 78.0%    | 12.0%     | 10.0%  
+MODERATE     | 40       | 40.0%    | 50.0%     | 10.0%  
+HARD         | 46       | 32.6%    | 47.8%     | 19.6%  
+VERY_HARD    | 9        | 44.4%    | 11.1%     | 44.4%  
+UNKNOWN      | 5        | 80.0%    | 0.0%      | 20.0%  
+
+----------------------------------------
+DIRECT PATH
+----------------------------------------
+Clear: 55 episodes -> Success: 78.2%, Collision: 10.9%, Timeout: 10.9%
+Blocked: 95 episodes -> Success: 36.8%, Collision: 45.3%, Timeout: 17.9%
+
+========================================
+FINAL DIAGNOSIS
+========================================
+
+Answer explicitly:
+
+1. Are we currently giving PPO too many easy goals?
+   YES. Over 33.3% of the benchmark is strictly EASY, and 36.7% has a completely clear direct path to the goal. These inflate the success rate (78% success on EASY) without testing complex obstacle avoidance.
+
+2. Are RANDOM goals genuinely diverse in difficulty?
+   NO. The RANDOM category skews heavily towards EASY (11 out of 20, or 55%). Only 7 of the 20 random goals even have a blocked direct path. Random coordinates in this environment frequently yield trivial open-space navigation.
+
+3. What percentage of RANDOM goals actually require meaningful navigation?
+   Only 35% (7 out of 20) require navigating around an obstacle (blocked direct path). 20% (4 out of 20) are classified as HARD.
+
+4. Are the four-corner goals sufficiently challenging?
+   It varies wildly. TOP_LEFT (100% blocked, HARD) and TOP_RIGHT (100% blocked, VERY_HARD) are genuinely difficult. However, BOTTOM_RIGHT is predominantly EASY (20% blocked) and BOTTOM_LEFT is MODERATE (60% blocked). They do not evenly distribute difficulty.
+
+5. Is direct-path blockage strongly associated with failure?
+   YES. The robot succeeds on 78.2% of clear paths, but crashes to a 36.8% success rate when the direct path is blocked. Collisions skyrocket from 10.9% to 45.3% when forced to detour.
+
+6. Is detour difficulty associated with failure?
+   YES. Success steadily drops from 78.0% (EASY) to 40.0% (MODERATE) to 32.6% (HARD). In VERY_HARD scenarios (high detour ratio or many obstacles), timeouts surge to 44.4% as the robot gets completely trapped.
+
+7. What percentage of the benchmark represents the actual problem we are trying to solve?
+   About 63.3% (the blocked path scenarios). If we only count MODERATE, HARD, and VERY_HARD, then 63.4% of the benchmark actually tests the core problem of breaking out of local minima and navigating around walls.
+
+8. Is our current benchmark capable of distinguishing a genuinely better navigation policy from one that simply performs well on easy/open goals?
+   Partially, but it is noisy. Because over 36% of the goals are trivial, a policy that degrades slightly on easy goals but masters complex detours might show a lower overall success rate, masking genuine navigation improvements.
+
+9. What is the biggest weakness in our current goal distribution?
+   The heavy reliance on naive RANDOM and static corner coordinates yields too many trivial straight-line tasks. We are evaluating "driving forward" just as often as we are evaluating "complex obstacle avoidance".
+
+10. Based ONLY on this analysis, what kind of curriculum should we consider next?
+   We should implement a heavily skewed curriculum that biases goal generation toward blocked direct paths, forcing detours. RANDOM goals should be structurally verified to ensure the direct path intersects a wall/obstacle before being fed to the agent, eliminating trivial "open corridor" goals from training.

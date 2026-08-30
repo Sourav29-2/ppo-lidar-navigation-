@@ -1,0 +1,64 @@
+========================================
+100K FINE-TUNING REPORT
+========================================
+
+Starting checkpoint:
+    best_success.pt
+
+Additional training:
+    98,304 steps (fine_tune_latest.pt)
+
+Reward:
+    clearance-aware version (warning/critical penalty, improvement reward)
+
+Goal curriculum:
+    60% difficult corner goals
+    40% random valid goals
+
+----------------------------------------
+OVERALL
+----------------------------------------
+
+Champion:
+Success 43.3%
+Collision 50.0%
+Timeout 6.7%
+
+Fine-tuned:
+Success 53.3%
+Collision 16.7%
+Timeout 30.0%
+
+----------------------------------------
+DIFFICULT GOALS
+----------------------------------------
+TOP_LEFT:\nChampion 0.0%\nFine-tuned 20.0%\n\nTOP_RIGHT:\nChampion 60.0%\nFine-tuned 100.0%\n\nBOTTOM_LEFT:\nChampion 0.0%\nFine-tuned 20.0%\n\nBOTTOM_RIGHT:\nChampion 80.0%\nFine-tuned 100.0%\n\nRANDOM:\nChampion 60.0%\nFine-tuned 40.0%\n\n----------------------------------------
+OBSTACLE BEHAVIOR
+----------------------------------------
+
+Front collision:
+Champion 0
+Fine-tuned 0
+
+No-turn rate:
+Champion 14
+Fine-tuned 3
+
+Successful avoidance:
+Champion 9
+Fine-tuned 9
+
+Critical recovery:
+Champion 6
+Fine-tuned 4
+
+Mean angular velocity when clearance <0.45m:
+Champion 0.070 rad/s
+Fine-tuned 0.088 rad/s
+
+----------------------------------------
+MODEL SELECTION
+----------------------------------------
+
+Should fine-tuned model replace champion?
+    YES\n\nReason:\n    Validation success went from 43.3% to 53.3%. Angular response went from 0.070 to 0.088.

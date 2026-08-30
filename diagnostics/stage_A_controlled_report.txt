@@ -1,0 +1,84 @@
+========================================
+STAGE A CONTROLLED BENCHMARK
+========================================
+
+Scenarios:
+    150
+
+Models:
+    Champion
+    Stage-A oscillation model
+
+Same scenarios:
+    YES
+
+Deterministic:
+    YES
+
+----------------------------------------
+OVERALL
+----------------------------------------
+
+                Champion    Stage-A
+
+Success:        52.0%       54.7%
+Collision:      32.7%       39.3%
+Timeout:        15.3%       6.0%
+Mean Path:      6.11m        6.41m
+Mean Time:      38.9s       33.6s
+Mean Clearance: 0.467m      0.448m
+
+----------------------------------------
+BEHAVIOR
+----------------------------------------
+
+Oscillation:           0          24
+No-turn:              25          16
+Front Collision:      0          0
+Successful Avoidance: 40          44
+Wall Bypass:          78          82
+
+----------------------------------------
+CATEGORIES
+----------------------------------------
+\nEASY / OPEN:\nChampion:   86.7% success, 13.3% collision, 0.0% timeout\nStage-A:    76.7% success, 23.3% collision, 0.0% timeout\n\nWALL-BLOCKED:\nChampion:   43.3% success, 46.7% collision, 10.0% timeout\nStage-A:    50.0% success, 40.0% collision, 10.0% timeout\n\nCOMPLEX OBSTACLE:\nChampion:   26.7% success, 56.7% collision, 16.7% timeout\nStage-A:    30.0% success, 50.0% collision, 20.0% timeout\n\nTOP_LEFT:\nChampion:   40.0% success, 30.0% collision, 30.0% timeout\nStage-A:    40.0% success, 60.0% collision, 0.0% timeout\n\nTOP_RIGHT:\nChampion:   40.0% success, 20.0% collision, 40.0% timeout\nStage-A:    60.0% success, 40.0% collision, 0.0% timeout\n\nBOTTOM_LEFT:\nChampion:   40.0% success, 50.0% collision, 10.0% timeout\nStage-A:    40.0% success, 60.0% collision, 0.0% timeout\n\nBOTTOM_RIGHT:\nChampion:   50.0% success, 10.0% collision, 40.0% timeout\nStage-A:    60.0% success, 40.0% collision, 0.0% timeout\n\nRANDOM:\nChampion:   70.0% success, 15.0% collision, 15.0% timeout\nStage-A:    75.0% success, 25.0% collision, 0.0% timeout\n
+----------------------------------------
+PAIRED RESULTS
+----------------------------------------
+
+Both succeed: 56
+Both fail: 46
+
+Champion succeeds / Stage-A fails: 22
+
+Stage-A succeeds / Champion fails: 26
+
+========================================
+FINAL DECISION
+========================================
+
+Answer explicitly:
+
+1. Does Stage-A beat the Champion overall?
+   YES (54.7% vs 52.0%)
+
+2. Does Stage-A reduce timeout?
+   YES (6.0% vs 15.3%)
+
+3. Does Stage-A reduce oscillation?
+   NO (24 events vs 0 events)
+
+4. Does Stage-A reduce collisions?
+   NO (39.3% vs 32.7%)
+
+5. Does Stage-A improve wall-blocked navigation?
+   YES (50.0% vs 43.3%)
+
+6. Does Stage-A improve complex-obstacle navigation?
+   YES (30.0% vs 26.7%)
+
+7. Does Stage-A preserve general/random navigation?
+   YES (75.0% vs 70.0%)
+
+8. Is oscillation_latest.pt actually better than best_success.pt?
+   NO, it has regressions.

@@ -1,0 +1,131 @@
+========================================
+CONTROLLED BENCHMARK
+========================================
+
+Scenarios:    150
+Models:       Champion, Fine-tuned
+Same scenarios: YES
+Deterministic:  YES
+
+========================================
+OVERALL RESULTS
+========================================
+
+                    Champion    Fine-tuned
+Success:            51.3%       46.0%
+Collision:          30.7%       27.3%
+Timeout:            18.0%       26.7%
+Mean Path:          6.26m        6.77m
+Mean Time:          42.0s       40.6s
+Mean Clearance:     0.464m      0.563m
+No-Turn:            22          21
+Front Collision:    0          0
+
+========================================
+CATEGORY RESULTS
+========================================
+
+EASY / OPEN
+  Champion:   70.0% success, 20.0% collision
+  Fine-tuned: 70.0% success, 16.7% collision
+
+WALL-BLOCKED
+  Champion:   43.3% success, 36.7% collision
+  Fine-tuned: 33.3% success, 26.7% collision
+
+COMPLEX OBSTACLE
+  Champion:   40.0% success, 40.0% collision
+  Fine-tuned: 16.7% success, 53.3% collision
+
+TOP_LEFT
+  Champion:   20.0% success, 80.0% collision
+  Fine-tuned: 0.0% success, 0.0% collision
+
+TOP_RIGHT
+  Champion:   60.0% success, 30.0% collision
+  Fine-tuned: 50.0% success, 50.0% collision
+
+BOTTOM_LEFT
+  Champion:   70.0% success, 20.0% collision
+  Fine-tuned: 50.0% success, 40.0% collision
+
+BOTTOM_RIGHT
+  Champion:   40.0% success, 0.0% collision
+  Fine-tuned: 100.0% success, 0.0% collision
+
+RANDOM
+  Champion:   60.0% success, 20.0% collision
+  Fine-tuned: 65.0% success, 15.0% collision
+
+========================================
+WALL-BLOCKED ANALYSIS
+========================================
+
+Number of wall-blocked scenarios: 30
+
+Champion success: 43.3%
+Fine-tuned success: 33.3%
+
+Champion wall-collision rate: 36.7%
+Fine-tuned wall-collision rate: 26.7%
+
+Champion no-turn rate: 20.0%
+Fine-tuned no-turn rate: 13.3%
+
+Champion successful wall bypass rate: 43.3%
+Fine-tuned successful wall bypass rate: 33.3%
+
+Champion mean clearance at first turn: 0.394m
+Fine-tuned mean clearance at first turn: 0.388m
+
+Champion mean angular velocity <0.45m: 0.116 rad/s
+Fine-tuned mean angular velocity <0.45m: 0.099 rad/s
+
+========================================
+FOUR-CORNER RESULTS
+========================================
+
+Corner          Champion       Fine-tuned
+TOP_LEFT        20.0%          0.0%
+TOP_RIGHT       60.0%          50.0%
+BOTTOM_LEFT     70.0%          50.0%
+BOTTOM_RIGHT    40.0%          100.0%
+
+========================================
+PAIRED SCENARIO ANALYSIS
+========================================
+
+scenarios where BOTH succeed: 44
+scenarios where BOTH fail: 48
+
+Champion succeeds / Fine-tuned fails: 33
+Fine-tuned succeeds / Champion fails: 25
+
+========================================
+FINAL VERDICT
+========================================
+
+========================================
+FINAL BENCHMARK VERDICT
+========================================
+
+Champion overall success:         51.3%
+Fine-tuned overall success:       46.0%
+
+Champion wall-blocked success:    43.3%
+Fine-tuned wall-blocked success:  33.3%
+
+Champion complex-obstacle success:  40.0%
+Fine-tuned complex-obstacle success:16.7%
+
+Champion collision:               30.7%
+Fine-tuned collision:             27.3%
+
+Champion timeout:                 18.0%
+Fine-tuned timeout:               26.7%
+
+========================================
+WINNER: CHAMPION
+
+REASON: Champion maintained superior overall success (51.3% vs 46.0%).
+========================================

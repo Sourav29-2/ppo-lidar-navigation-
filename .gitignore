@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+.pixi/
+.pixi 2/
+.pixi.nosync/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Logs and outputs
+*.log
+runs/
+outputs/
+scratch/
+log/
+build/
+install/
+
+# Checkpoints and models
+checkpoints/
+checkpoints_backup/
+checkpoints_validation/
+*.pt
+*.pth
+*.zip
+
+# Temporary scripts
+smoke_test_*.py
+test_*.py
+verify_transcript.py
+check*.py
+fix_initial_pose.py
+prepare_training.py

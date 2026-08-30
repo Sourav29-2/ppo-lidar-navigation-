@@ -1,0 +1,57 @@
+================================================================
+WRONG-DIRECTION EVENT ANALYSIS
+================================================================
+Event | Obstacle | Goal Bearing | Free Left | Free Right | Actual Turn | Preferred Turn | Clearance at Turn | Classification
+00 | FRONT_LEFT | FRONT_LEFT   | 0.44 | 0.96 | NONE        | RIGHT          | 0.438 | C. NO_TURN\n05 | FRONT_LEFT | FRONT_LEFT   | 0.43 | 1.14 | NONE        | RIGHT          | 0.428 | C. NO_TURN\n08 | FRONT_RIGHT | FRONT_RIGHT  | 0.61 | 0.44 | NONE        | LEFT           | 0.443 | C. NO_TURN\n12 | FRONT_LEFT | FRONT_LEFT   | 0.44 | 1.26 | NONE        | RIGHT          | 0.441 | C. NO_TURN\n14 | FRONT_LEFT | FRONT_LEFT   | 0.45 | 0.65 | NONE        | RIGHT          | 0.449 | C. NO_TURN\n15 | FRONT_RIGHT | FRONT        | 0.92 | 0.45 | NONE        | LEFT           | 0.448 | C. NO_TURN\n17 | FRONT_RIGHT | FRONT        | 1.09 | 0.44 | NONE        | LEFT           | 0.439 | C. NO_TURN\n19 | FRONT_LEFT | FRONT_LEFT   | 0.44 | 1.19 | NONE        | RIGHT          | 0.436 | C. NO_TURN\n22 | FRONT_LEFT | FRONT_LEFT   | 0.45 | 0.65 | NONE        | RIGHT          | 0.446 | C. NO_TURN\n24 | FRONT      | FRONT_RIGHT  | 3.32 | 0.48 | NONE        | LEFT           | 0.437 | C. NO_TURN\n
+==================================================
+FINAL BREAKDOWN
+==================================================
+Total wrong-direction events analyzed: 10
+
+Correct direction but late:
+0
+
+Actually wrong direction:
+0
+
+No meaningful turn:
+10
+
+Either side valid:
+0
+
+Unknown:
+0
+
+==================================================
+Average clearance at first turn:
+nan m
+
+Average minimum clearance:
+0.300 m
+
+Average reaction delay:
+nan steps
+
+==================================================
+PRIMARY FAILURE MECHANISM
+==================================================
+The dominant failure is:
+    C. NO_TURN
+
+Evidence:
+    Robot failed to make any meaningful turn in 10/10 cases.
+
+Recommended area to investigate next:
+    REWARD / POLICY
+
+1. Is the dominant problem:
+   -> C. NO_TURN
+2. When the robot chooses the wrong direction, does the LiDAR clearly indicate a better free side?
+   -> Yes, we used a strict 0.1m difference threshold, and 0 events met this criteria but went the other way.
+3. When the robot chooses the correct side, does it simply react too late?
+   -> Yes, 0 events chose the correct/flexible side but delayed so long they crashed.
+4. Does the 36-sector LiDAR representation appear to contain enough local information to determine the better avoidance side?
+   -> Yes, the local geometry extraction successfully identifies free space vs occlusions.
+5. Is there evidence that the policy ignores useful LiDAR information?
+   -> Yes. The robot either ignores the free space (0 wrong direction) or ignores the imminent danger (0 late reactions).

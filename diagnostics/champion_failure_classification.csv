@@ -1,0 +1,151 @@
+episode_id,category,outcome,failure_mode,supporting_metrics
+EASY / OPEN_1,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=6 turn_pct=0.42 dist_red=2.51
+EASY / OPEN_2,EASY / OPEN,COLLISION,OSCILLATION,lin_rev=4 ang_rev=30 turn_pct=0.34 dist_red=5.28
+EASY / OPEN_3,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=17 turn_pct=0.45 dist_red=5.14
+EASY / OPEN_4,EASY / OPEN,SUCCESS,N/A,lin_rev=1 ang_rev=35 turn_pct=0.31 dist_red=5.87
+EASY / OPEN_5,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=33 turn_pct=0.44 dist_red=5.02
+EASY / OPEN_6,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=39 turn_pct=0.31 dist_red=5.89
+EASY / OPEN_7,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=39 turn_pct=0.24 dist_red=6.05
+EASY / OPEN_8,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=19 turn_pct=0.30 dist_red=3.95
+EASY / OPEN_9,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=8 turn_pct=0.47 dist_red=3.73
+EASY / OPEN_10,EASY / OPEN,SUCCESS,N/A,lin_rev=1 ang_rev=41 turn_pct=0.28 dist_red=6.30
+EASY / OPEN_11,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=8 turn_pct=0.28 dist_red=4.84
+EASY / OPEN_12,EASY / OPEN,COLLISION,COLLISION,lin_rev=4 ang_rev=15 turn_pct=0.25 dist_red=3.28
+EASY / OPEN_13,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=10 turn_pct=0.33 dist_red=3.84
+EASY / OPEN_14,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=27 turn_pct=0.42 dist_red=4.14
+EASY / OPEN_15,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=41 turn_pct=0.48 dist_red=4.91
+EASY / OPEN_16,EASY / OPEN,COLLISION,OSCILLATION,lin_rev=0 ang_rev=21 turn_pct=0.39 dist_red=1.06
+EASY / OPEN_17,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=7 turn_pct=0.47 dist_red=1.53
+EASY / OPEN_18,EASY / OPEN,TIMEOUT,OSCILLATION,lin_rev=0 ang_rev=45 turn_pct=0.59 dist_red=3.73
+EASY / OPEN_19,EASY / OPEN,TIMEOUT,REVERSE_CREEP,lin_rev=0 ang_rev=1 turn_pct=0.14 dist_red=0.56
+EASY / OPEN_20,EASY / OPEN,SUCCESS,N/A,lin_rev=4 ang_rev=15 turn_pct=0.35 dist_red=2.02
+EASY / OPEN_21,EASY / OPEN,TIMEOUT,OSCILLATION,lin_rev=3 ang_rev=26 turn_pct=0.10 dist_red=3.40
+EASY / OPEN_22,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=10 turn_pct=0.38 dist_red=2.45
+EASY / OPEN_23,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=35 turn_pct=0.36 dist_red=6.87
+EASY / OPEN_24,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=22 turn_pct=0.47 dist_red=2.94
+EASY / OPEN_25,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=16 turn_pct=0.29 dist_red=4.46
+EASY / OPEN_26,EASY / OPEN,SUCCESS,N/A,lin_rev=2 ang_rev=15 turn_pct=0.30 dist_red=4.70
+EASY / OPEN_27,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=15 turn_pct=0.47 dist_red=2.90
+EASY / OPEN_28,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=39 turn_pct=0.23 dist_red=6.66
+EASY / OPEN_29,EASY / OPEN,COLLISION,OSCILLATION,lin_rev=0 ang_rev=29 turn_pct=0.30 dist_red=2.55
+EASY / OPEN_30,EASY / OPEN,SUCCESS,N/A,lin_rev=0 ang_rev=26 turn_pct=0.34 dist_red=4.37
+WALL-BLOCKED_1,WALL-BLOCKED,TIMEOUT,SPINNING,lin_rev=3 ang_rev=11 turn_pct=0.15 dist_red=3.69
+WALL-BLOCKED_2,WALL-BLOCKED,COLLISION,COLLISION,lin_rev=2 ang_rev=12 turn_pct=0.38 dist_red=3.65
+WALL-BLOCKED_3,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=0 ang_rev=33 turn_pct=0.27 dist_red=4.54
+WALL-BLOCKED_4,WALL-BLOCKED,SUCCESS,N/A,lin_rev=0 ang_rev=16 turn_pct=0.33 dist_red=5.55
+WALL-BLOCKED_5,WALL-BLOCKED,TIMEOUT,SPINNING,lin_rev=4 ang_rev=15 turn_pct=0.14 dist_red=3.85
+WALL-BLOCKED_6,WALL-BLOCKED,SUCCESS,N/A,lin_rev=1 ang_rev=32 turn_pct=0.48 dist_red=3.60
+WALL-BLOCKED_7,WALL-BLOCKED,SUCCESS,N/A,lin_rev=3 ang_rev=36 turn_pct=0.27 dist_red=3.41
+WALL-BLOCKED_8,WALL-BLOCKED,SUCCESS,N/A,lin_rev=4 ang_rev=37 turn_pct=0.37 dist_red=6.47
+WALL-BLOCKED_9,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=2 ang_rev=19 turn_pct=0.23 dist_red=3.27
+WALL-BLOCKED_10,WALL-BLOCKED,SUCCESS,N/A,lin_rev=0 ang_rev=53 turn_pct=0.42 dist_red=2.69
+WALL-BLOCKED_11,WALL-BLOCKED,SUCCESS,N/A,lin_rev=3 ang_rev=33 turn_pct=0.34 dist_red=6.04
+WALL-BLOCKED_12,WALL-BLOCKED,SUCCESS,N/A,lin_rev=2 ang_rev=34 turn_pct=0.33 dist_red=6.16
+WALL-BLOCKED_13,WALL-BLOCKED,SUCCESS,N/A,lin_rev=1 ang_rev=29 turn_pct=0.30 dist_red=6.34
+WALL-BLOCKED_14,WALL-BLOCKED,SUCCESS,N/A,lin_rev=2 ang_rev=31 turn_pct=0.36 dist_red=6.56
+WALL-BLOCKED_15,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=4 ang_rev=33 turn_pct=0.18 dist_red=3.04
+WALL-BLOCKED_16,WALL-BLOCKED,SUCCESS,N/A,lin_rev=1 ang_rev=44 turn_pct=0.40 dist_red=2.48
+WALL-BLOCKED_17,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=2 ang_rev=27 turn_pct=0.23 dist_red=2.97
+WALL-BLOCKED_18,WALL-BLOCKED,SUCCESS,N/A,lin_rev=2 ang_rev=25 turn_pct=0.36 dist_red=7.02
+WALL-BLOCKED_19,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=1 ang_rev=33 turn_pct=0.46 dist_red=2.11
+WALL-BLOCKED_20,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=0 ang_rev=33 turn_pct=0.59 dist_red=2.02
+WALL-BLOCKED_21,WALL-BLOCKED,SUCCESS,N/A,lin_rev=0 ang_rev=25 turn_pct=0.32 dist_red=6.52
+WALL-BLOCKED_22,WALL-BLOCKED,TIMEOUT,OSCILLATION,lin_rev=0 ang_rev=134 turn_pct=0.05 dist_red=0.20
+WALL-BLOCKED_23,WALL-BLOCKED,SUCCESS,N/A,lin_rev=1 ang_rev=8 turn_pct=0.36 dist_red=2.86
+WALL-BLOCKED_24,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=11 ang_rev=31 turn_pct=0.23 dist_red=3.40
+WALL-BLOCKED_25,WALL-BLOCKED,TIMEOUT,REVERSE_CREEP,lin_rev=0 ang_rev=7 turn_pct=0.09 dist_red=-0.23
+WALL-BLOCKED_26,WALL-BLOCKED,SUCCESS,N/A,lin_rev=4 ang_rev=26 turn_pct=0.41 dist_red=6.04
+WALL-BLOCKED_27,WALL-BLOCKED,SUCCESS,N/A,lin_rev=0 ang_rev=27 turn_pct=0.20 dist_red=6.32
+WALL-BLOCKED_28,WALL-BLOCKED,COLLISION,OSCILLATION,lin_rev=3 ang_rev=45 turn_pct=0.45 dist_red=2.19
+WALL-BLOCKED_29,WALL-BLOCKED,TIMEOUT,REVERSE_CREEP,lin_rev=1 ang_rev=14 turn_pct=0.04 dist_red=1.64
+WALL-BLOCKED_30,WALL-BLOCKED,TIMEOUT,REVERSE_CREEP,lin_rev=1 ang_rev=1 turn_pct=0.15 dist_red=0.76
+COMPLEX OBSTACLE_1,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=3 ang_rev=55 turn_pct=0.46 dist_red=1.74
+COMPLEX OBSTACLE_2,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=2 ang_rev=41 turn_pct=0.41 dist_red=6.09
+COMPLEX OBSTACLE_3,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=2 ang_rev=17 turn_pct=0.39 dist_red=3.71
+COMPLEX OBSTACLE_4,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=2 ang_rev=23 turn_pct=0.27 dist_red=5.95
+COMPLEX OBSTACLE_5,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=1 ang_rev=29 turn_pct=0.47 dist_red=3.97
+COMPLEX OBSTACLE_6,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=9 ang_rev=44 turn_pct=0.46 dist_red=5.86
+COMPLEX OBSTACLE_7,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=0 ang_rev=27 turn_pct=0.38 dist_red=3.43
+COMPLEX OBSTACLE_8,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=0 ang_rev=32 turn_pct=0.60 dist_red=3.35
+COMPLEX OBSTACLE_9,COMPLEX OBSTACLE,COLLISION,COLLISION,lin_rev=3 ang_rev=14 turn_pct=0.45 dist_red=2.85
+COMPLEX OBSTACLE_10,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=0 ang_rev=29 turn_pct=0.48 dist_red=3.73
+COMPLEX OBSTACLE_11,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=0 ang_rev=31 turn_pct=0.19 dist_red=6.69
+COMPLEX OBSTACLE_12,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=0 ang_rev=58 turn_pct=0.29 dist_red=8.51
+COMPLEX OBSTACLE_13,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=2 ang_rev=36 turn_pct=0.23 dist_red=5.67
+COMPLEX OBSTACLE_14,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=0 ang_rev=30 turn_pct=0.41 dist_red=5.98
+COMPLEX OBSTACLE_15,COMPLEX OBSTACLE,COLLISION,COLLISION,lin_rev=1 ang_rev=3 turn_pct=0.40 dist_red=1.62
+COMPLEX OBSTACLE_16,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=3 ang_rev=20 turn_pct=0.23 dist_red=2.85
+COMPLEX OBSTACLE_17,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=0 ang_rev=177 turn_pct=0.04 dist_red=0.84
+COMPLEX OBSTACLE_18,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=2 ang_rev=59 turn_pct=0.39 dist_red=5.96
+COMPLEX OBSTACLE_19,COMPLEX OBSTACLE,COLLISION,LOW_PROGRESS,lin_rev=1 ang_rev=5 turn_pct=0.38 dist_red=0.96
+COMPLEX OBSTACLE_20,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=0 ang_rev=17 turn_pct=0.31 dist_red=3.41
+COMPLEX OBSTACLE_21,COMPLEX OBSTACLE,COLLISION,LOW_PROGRESS,lin_rev=1 ang_rev=3 turn_pct=0.47 dist_red=0.98
+COMPLEX OBSTACLE_22,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=2 ang_rev=59 turn_pct=0.29 dist_red=7.02
+COMPLEX OBSTACLE_23,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=0 ang_rev=65 turn_pct=0.37 dist_red=5.67
+COMPLEX OBSTACLE_24,COMPLEX OBSTACLE,TIMEOUT,LOW_PROGRESS,lin_rev=3 ang_rev=5 turn_pct=0.16 dist_red=0.47
+COMPLEX OBSTACLE_25,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=0 ang_rev=49 turn_pct=0.29 dist_red=8.81
+COMPLEX OBSTACLE_26,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=0 ang_rev=60 turn_pct=0.52 dist_red=3.11
+COMPLEX OBSTACLE_27,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=0 ang_rev=35 turn_pct=0.38 dist_red=6.84
+COMPLEX OBSTACLE_28,COMPLEX OBSTACLE,TIMEOUT,OSCILLATION,lin_rev=1 ang_rev=26 turn_pct=0.12 dist_red=3.38
+COMPLEX OBSTACLE_29,COMPLEX OBSTACLE,COLLISION,OSCILLATION,lin_rev=1 ang_rev=24 turn_pct=0.30 dist_red=3.83
+COMPLEX OBSTACLE_30,COMPLEX OBSTACLE,SUCCESS,N/A,lin_rev=4 ang_rev=16 turn_pct=0.25 dist_red=3.71
+TOP_LEFT_1,TOP_LEFT,COLLISION,LOW_PROGRESS,lin_rev=1 ang_rev=5 turn_pct=0.39 dist_red=0.92
+TOP_LEFT_2,TOP_LEFT,SUCCESS,N/A,lin_rev=1 ang_rev=13 turn_pct=0.35 dist_red=4.42
+TOP_LEFT_3,TOP_LEFT,COLLISION,COLLISION,lin_rev=1 ang_rev=3 turn_pct=0.50 dist_red=1.25
+TOP_LEFT_4,TOP_LEFT,COLLISION,OSCILLATION,lin_rev=1 ang_rev=18 turn_pct=0.44 dist_red=3.51
+TOP_LEFT_5,TOP_LEFT,COLLISION,COLLISION,lin_rev=1 ang_rev=5 turn_pct=0.47 dist_red=1.06
+TOP_LEFT_6,TOP_LEFT,SUCCESS,N/A,lin_rev=1 ang_rev=18 turn_pct=0.38 dist_red=4.47
+TOP_LEFT_7,TOP_LEFT,COLLISION,LOW_PROGRESS,lin_rev=1 ang_rev=5 turn_pct=0.39 dist_red=0.87
+TOP_LEFT_8,TOP_LEFT,SUCCESS,N/A,lin_rev=1 ang_rev=23 turn_pct=0.34 dist_red=4.69
+TOP_LEFT_9,TOP_LEFT,SUCCESS,N/A,lin_rev=1 ang_rev=4 turn_pct=0.29 dist_red=2.97
+TOP_LEFT_10,TOP_LEFT,SUCCESS,N/A,lin_rev=3 ang_rev=26 turn_pct=0.32 dist_red=5.46
+TOP_RIGHT_1,TOP_RIGHT,COLLISION,OSCILLATION,lin_rev=21 ang_rev=41 turn_pct=0.22 dist_red=3.67
+TOP_RIGHT_2,TOP_RIGHT,COLLISION,OSCILLATION,lin_rev=0 ang_rev=20 turn_pct=0.41 dist_red=3.82
+TOP_RIGHT_3,TOP_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=49 turn_pct=0.17 dist_red=7.17
+TOP_RIGHT_4,TOP_RIGHT,SUCCESS,N/A,lin_rev=3 ang_rev=30 turn_pct=0.48 dist_red=4.74
+TOP_RIGHT_5,TOP_RIGHT,COLLISION,OSCILLATION,lin_rev=0 ang_rev=27 turn_pct=0.20 dist_red=6.07
+TOP_RIGHT_6,TOP_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=26 turn_pct=0.41 dist_red=5.96
+TOP_RIGHT_7,TOP_RIGHT,COLLISION,OSCILLATION,lin_rev=0 ang_rev=39 turn_pct=0.32 dist_red=4.22
+TOP_RIGHT_8,TOP_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=29 turn_pct=0.31 dist_red=6.56
+TOP_RIGHT_9,TOP_RIGHT,TIMEOUT,OSCILLATION,lin_rev=29 ang_rev=29 turn_pct=0.23 dist_red=-0.23
+TOP_RIGHT_10,TOP_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=46 turn_pct=0.42 dist_red=6.27
+BOTTOM_LEFT_1,BOTTOM_LEFT,SUCCESS,N/A,lin_rev=2 ang_rev=17 turn_pct=0.44 dist_red=4.06
+BOTTOM_LEFT_2,BOTTOM_LEFT,SUCCESS,N/A,lin_rev=0 ang_rev=27 turn_pct=0.37 dist_red=8.00
+BOTTOM_LEFT_3,BOTTOM_LEFT,SUCCESS,N/A,lin_rev=0 ang_rev=14 turn_pct=0.47 dist_red=5.53
+BOTTOM_LEFT_4,BOTTOM_LEFT,COLLISION,COLLISION,lin_rev=0 ang_rev=12 turn_pct=0.43 dist_red=3.03
+BOTTOM_LEFT_5,BOTTOM_LEFT,TIMEOUT,OSCILLATION,lin_rev=1 ang_rev=36 turn_pct=0.09 dist_red=3.35
+BOTTOM_LEFT_6,BOTTOM_LEFT,SUCCESS,N/A,lin_rev=0 ang_rev=27 turn_pct=0.49 dist_red=5.69
+BOTTOM_LEFT_7,BOTTOM_LEFT,COLLISION,OSCILLATION,lin_rev=4 ang_rev=29 turn_pct=0.23 dist_red=3.13
+BOTTOM_LEFT_8,BOTTOM_LEFT,COLLISION,OSCILLATION,lin_rev=3 ang_rev=17 turn_pct=0.46 dist_red=3.79
+BOTTOM_LEFT_9,BOTTOM_LEFT,COLLISION,OSCILLATION,lin_rev=2 ang_rev=39 turn_pct=0.22 dist_red=6.23
+BOTTOM_LEFT_10,BOTTOM_LEFT,SUCCESS,N/A,lin_rev=2 ang_rev=13 turn_pct=0.43 dist_red=4.49
+BOTTOM_RIGHT_1,BOTTOM_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=20 turn_pct=0.37 dist_red=2.82
+BOTTOM_RIGHT_2,BOTTOM_RIGHT,COLLISION,OSCILLATION,lin_rev=10 ang_rev=26 turn_pct=0.35 dist_red=3.63
+BOTTOM_RIGHT_3,BOTTOM_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=32 turn_pct=0.31 dist_red=4.86
+BOTTOM_RIGHT_4,BOTTOM_RIGHT,COLLISION,OSCILLATION,lin_rev=6 ang_rev=25 turn_pct=0.41 dist_red=3.75
+BOTTOM_RIGHT_5,BOTTOM_RIGHT,TIMEOUT,OSCILLATION,lin_rev=1 ang_rev=63 turn_pct=0.10 dist_red=3.13
+BOTTOM_RIGHT_6,BOTTOM_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=18 turn_pct=0.22 dist_red=6.71
+BOTTOM_RIGHT_7,BOTTOM_RIGHT,TIMEOUT,OSCILLATION,lin_rev=3 ang_rev=36 turn_pct=0.10 dist_red=3.38
+BOTTOM_RIGHT_8,BOTTOM_RIGHT,SUCCESS,N/A,lin_rev=0 ang_rev=29 turn_pct=0.42 dist_red=4.90
+BOTTOM_RIGHT_9,BOTTOM_RIGHT,COLLISION,OSCILLATION,lin_rev=1 ang_rev=30 turn_pct=0.18 dist_red=3.92
+BOTTOM_RIGHT_10,BOTTOM_RIGHT,SUCCESS,N/A,lin_rev=2 ang_rev=28 turn_pct=0.56 dist_red=2.86
+RANDOM_1,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=26 turn_pct=0.31 dist_red=5.25
+RANDOM_2,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=28 turn_pct=0.44 dist_red=2.96
+RANDOM_3,RANDOM,COLLISION,OSCILLATION,lin_rev=0 ang_rev=57 turn_pct=0.37 dist_red=5.26
+RANDOM_4,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=12 turn_pct=0.32 dist_red=4.09
+RANDOM_5,RANDOM,TIMEOUT,OSCILLATION,lin_rev=3 ang_rev=44 turn_pct=0.15 dist_red=3.24
+RANDOM_6,RANDOM,SUCCESS,N/A,lin_rev=2 ang_rev=14 turn_pct=0.45 dist_red=4.58
+RANDOM_7,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=27 turn_pct=0.28 dist_red=5.49
+RANDOM_8,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=0 turn_pct=0.71 dist_red=1.06
+RANDOM_9,RANDOM,SUCCESS,N/A,lin_rev=1 ang_rev=2 turn_pct=0.29 dist_red=2.86
+RANDOM_10,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=19 turn_pct=0.50 dist_red=6.14
+RANDOM_11,RANDOM,COLLISION,COLLISION,lin_rev=1 ang_rev=9 turn_pct=0.42 dist_red=1.06
+RANDOM_12,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=6 turn_pct=0.40 dist_red=3.79
+RANDOM_13,RANDOM,SUCCESS,N/A,lin_rev=1 ang_rev=23 turn_pct=0.38 dist_red=4.48
+RANDOM_14,RANDOM,SUCCESS,N/A,lin_rev=2 ang_rev=19 turn_pct=0.35 dist_red=4.09
+RANDOM_15,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=39 turn_pct=0.27 dist_red=5.19
+RANDOM_16,RANDOM,SUCCESS,N/A,lin_rev=2 ang_rev=6 turn_pct=0.42 dist_red=2.21
+RANDOM_17,RANDOM,SUCCESS,N/A,lin_rev=2 ang_rev=7 turn_pct=0.67 dist_red=1.18
+RANDOM_18,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=38 turn_pct=0.35 dist_red=8.06
+RANDOM_19,RANDOM,COLLISION,OSCILLATION,lin_rev=2 ang_rev=38 turn_pct=0.25 dist_red=5.73
+RANDOM_20,RANDOM,SUCCESS,N/A,lin_rev=0 ang_rev=25 turn_pct=0.18 dist_red=6.68

@@ -1,0 +1,92 @@
+========================================
+NAV2 + SLAM PHASE 1
+========================================
+
+Gazebo:
+    PASS (Robot spawned and diff drive controller active)
+
+SLAM:
+    PASS (Map successfully generated and published)
+
+Localization / TF:
+    PASS (AMCL localized and TF tree from map->odom->base_footprint established)
+
+Map:
+    PASS (Published on /map and ingested by costmaps)
+
+Global Costmap:
+    PASS (Obstacles correctly represented)
+
+Local Costmap:
+    PASS (Updates around the robot)
+
+Planner:
+    PASS (Successfully generated valid global paths for all scenarios)
+
+Controller:
+    FAIL (The local trajectory controller aborted on Tests 2 and 3 due to likely footprint/gap tuning issues, but the path was generated correctly)
+
+----------------------------------------
+TEST 1 — OPEN GOAL
+----------------------------------------
+
+Goal: x=2.0, y=0.0
+Result: PASS
+Path generated: Yes (78 poses generated)
+Reached: YES (Status 4 SUCCEEDED)
+
+----------------------------------------
+TEST 2 — OBSTACLE
+----------------------------------------
+
+Goal: x=1.5, y=-3.0 (Behind hall box obstacle)
+Result: FAIL (Controller Aborted)
+Path generated: Yes (121 poses generated)
+Obstacle bypass: YES (The global path was successfully routed around the obstacle)
+Reached: NO (Controller aborted with Status 6 before reaching goal)
+
+----------------------------------------
+TEST 3 — WALL BLOCKED
+----------------------------------------
+
+Goal: x=-5.0, y=5.0 (Inside Bedroom 1, completely walled off)
+Direct path blocked: YES
+Nav2 generated detour: YES (351 poses generated)
+Detour direction: Around the external living room walls into the bedroom entrance.
+Reached: NO (Controller aborted with Status 6 during execution)
+
+----------------------------------------
+GLOBAL PATH
+----------------------------------------
+
+Path topic: /plan
+Number of poses: 351 poses (Test 3)
+Approximate path length: ~10+ meters of travel for the detour.
+
+----------------------------------------
+FINAL DIAGNOSIS
+----------------------------------------
+
+Answer:
+
+1. Is SLAM working?
+Yes. SLAM and mapping work perfectly.
+
+2. Is Nav2 receiving the correct map and pose?
+Yes. Once we published to /initialpose, AMCL received it, and the global costmap built successfully.
+
+3. Is the global planner generating valid paths?
+Yes. The planner generated 100% valid global paths for all three goals. 
+
+4. Can Nav2 solve a wall-blocked goal?
+Yes. It correctly recognized the wall blocking the direct route and calculated a massive 351-pose detour to navigate around it.
+
+5. Can Nav2 successfully navigate around the wall?
+No. While the PLANNER found the route, the local CONTROLLER (DWB) aborted execution mid-way during complex obstacle/wall maneuvers. However, for a Hybrid Model, this is totally fine because we don't need the classical controller! We will use our PPO agent as the controller.
+
+6. Is the Nav2 global path accessible to another ROS 2 node?
+Yes. It is published as `nav_msgs/Path` on the `/plan` topic.
+
+7. Is there anything preventing us from using this path as an
+   additional input to PPO?
+No. The `/plan` topic is readily available. We can simply subscribe to it in our PPO Python environment, extract the next few waypoints, and use them to guide the PPO agent's local navigation.

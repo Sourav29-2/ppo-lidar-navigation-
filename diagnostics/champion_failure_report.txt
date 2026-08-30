@@ -1,0 +1,76 @@
+========================================
+CHAMPION FAILURE DIAGNOSTIC
+========================================
+
+Total episodes: 150
+
+Successful: 85
+Collision: 49
+Timeout: 16
+
+----------------------------------------
+FAILURE MODES (across all 65 failures)
+----------------------------------------
+
+OSCILLATION:                46 / 70.8%
+SPINNING:                   2 / 3.1%
+INSUFFICIENT_TURN:          0 / 0.0%
+WRONG_DIRECTION:            0 / 0.0%
+REPEATED_OBSTACLE_APPROACH: 0 / 0.0%
+LOW_PROGRESS:               5 / 7.7%
+REVERSE_CREEP:              4 / 6.2%
+DIRECT_WALL_COMMITMENT:     0 / 0.0%
+COLLISION (Generic):        8 / 12.3%
+TIMEOUT (Generic):          0 / 0.0%
+
+----------------------------------------
+WALL-BLOCKED
+----------------------------------------
+
+Total: 30
+Success: 15
+Collision: 9
+Timeout: 6
+
+Failure mode distribution:
+SPINNING: 2 (13.3%)\nCOLLISION: 1 (6.7%)\nOSCILLATION: 9 (60.0%)\nREVERSE_CREEP: 3 (20.0%)\n\n----------------------------------------
+COMPLEX OBSTACLE
+----------------------------------------
+
+Total: 30
+Success: 11
+Collision: 17
+Timeout: 2
+
+Failure mode distribution:
+OSCILLATION: 14 (73.7%)\nCOLLISION: 2 (10.5%)\nLOW_PROGRESS: 3 (15.8%)\n\n----------------------------------------
+SUCCESS VS FAILURE
+----------------------------------------
+Mean Progress: Success = 4.86m | Failure = 3.05m
+Mean Turn %:   Success = 37.3% | Failure = 29.6%
+Mean Ang Revs: Success = 25.8 | Failure = 29.5
+
+========================================
+FINAL DIAGNOSIS
+========================================
+
+1. Is the dominant problem oscillation?
+   YES
+
+2. Is the dominant problem spinning?
+   NO
+
+3. Is the dominant problem insufficient turning?
+   NO
+
+4. Is the robot repeatedly committing toward blocked goal directions?
+   NO
+
+8. What is the SINGLE most common failure mode?
+   OSCILLATION
+
+9. What is the SECOND most common failure mode?
+   COLLISION
+
+10. What behavior should the next experiment specifically target?
+    OSCILLATION

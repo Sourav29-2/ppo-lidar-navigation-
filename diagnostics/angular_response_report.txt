@@ -1,0 +1,109 @@
+================================================================
+ACTION PIPELINE MAPPING
+================================================================
+normalized angular action -> scaled by max_angular_vel (2.84 rad/s) -> physical angular velocity
+
+Threshold for Meaningful Turn:
+We define a meaningful turn as an angular velocity of >= 0.5 rad/s.
+This corresponds to a normalized angular action of >= 0.176.
+Any action smaller than this does not constitute a serious avoidance maneuver for this robot.
+
+Pipeline mismatches (abs diff > 0.5 rad/s between expected and actual): 0
+
+================================================================
+ANGULAR RESPONSE BY CLEARANCE
+================================================================
+Clearance | Mean Angular Action | Mean Angular Vel | Mean Linear Vel | % Meaningful Turns
+-----------------------------------------------------------------------------------------
+0.50 m    | 0.032               | 0.061            | 0.213           | 0.0%
+0.45 m    | 0.027               | 0.086            | 0.222           | 0.0%
+0.40 m    | 0.051               | 0.118            | 0.232           | 0.0%
+0.35 m    | 0.071               | 0.165            | 0.245           | 0.0%
+0.30 m    | 0.021               | 0.048            | 0.064           | 0.0%
+
+================================================================
+EVENT-BY-EVENT TABLE
+================================================================
+Event | Clearance | Angular Action | Angular Vel | Linear Vel | Meaningful Turn
+-------------------------------------------------------------------------------
+00    | 0.495 m   |          0.011 |       0.030 |      0.253 | NO
+00    | 0.457 m   |          0.012 |       0.033 |      0.248 | NO
+00    | 0.399 m   |          0.033 |       0.091 |      0.259 | NO
+00    | 0.357 m   |          0.042 |       0.117 |      0.264 | NO
+00    | 0.300 m   |          0.001 |       0.014 |      0.007 | NO
+05    | 0.496 m   |          0.145 |       0.256 |      0.303 | NO
+05    | 0.453 m   |          0.079 |       0.224 |      0.338 | NO
+05    | 0.405 m   |          0.123 |       0.225 |      0.310 | NO
+05    | 0.361 m   |          0.125 |       0.228 |      0.309 | NO
+05    | 0.300 m   |          0.025 |       0.032 |     -0.003 | NO
+08    | 0.507 m   |          0.005 |       0.014 |      0.298 | NO
+08    | 0.443 m   |         -0.012 |      -0.033 |      0.225 | NO
+08    | 0.397 m   |         -0.014 |      -0.040 |      0.260 | NO
+08    | 0.345 m   |         -0.053 |      -0.036 |      0.209 | NO
+08    | 0.300 m   |         -0.028 |      -0.064 |      0.139 | NO
+12    | 0.505 m   |          0.047 |       0.130 |      0.297 | NO
+12    | 0.441 m   |         -0.022 |       0.119 |      0.281 | NO
+12    | 0.393 m   |         -0.067 |       0.148 |      0.274 | NO
+12    | 0.343 m   |         -0.080 |       0.218 |      0.250 | NO
+12    | 0.300 m   |          0.057 |       0.062 |      0.013 | NO
+14    | 0.501 m   |          0.011 |       0.025 |      0.030 | NO
+14    | 0.449 m   |          0.003 |       0.009 |      0.076 | NO
+14    | 0.406 m   |         -0.001 |      -0.000 |      0.142 | NO
+14    | 0.342 m   |         -0.079 |      -0.220 |      0.252 | NO
+14    | 0.300 m   |         -0.001 |       0.016 |      0.013 | NO
+15    | 0.493 m   |         -0.012 |       0.071 |      0.210 | NO
+15    | 0.448 m   |         -0.064 |       0.235 |      0.209 | NO
+15    | 0.406 m   |         -0.117 |      -0.289 |      0.160 | NO
+15    | 0.355 m   |         -0.139 |      -0.359 |      0.167 | NO
+15    | 0.300 m   |          0.013 |       0.043 |      0.029 | NO
+17    | 0.499 m   |         -0.055 |      -0.010 |      0.124 | NO
+17    | 0.456 m   |         -0.007 |      -0.017 |      0.200 | NO
+17    | 0.404 m   |         -0.054 |      -0.132 |      0.207 | NO
+17    | 0.339 m   |          0.030 |       0.005 |      0.260 | NO
+17    | 0.301 m   |          0.017 |       0.158 |      0.202 | NO
+19    | 0.501 m   |          0.011 |       0.030 |      0.268 | NO
+19    | 0.460 m   |         -0.007 |       0.150 |      0.261 | NO
+19    | 0.389 m   |          0.097 |       0.232 |      0.328 | NO
+19    | 0.341 m   |          0.058 |       0.164 |      0.280 | NO
+19    | 0.300 m   |          0.054 |       0.051 |      0.010 | NO
+22    | 0.501 m   |          0.011 |       0.027 |      0.034 | NO
+22    | 0.453 m   |          0.002 |       0.005 |      0.084 | NO
+22    | 0.406 m   |          0.000 |       0.001 |      0.161 | NO
+22    | 0.355 m   |         -0.090 |      -0.255 |      0.240 | NO
+22    | 0.300 m   |         -0.001 |       0.018 |      0.011 | NO
+24    | 0.491 m   |          0.008 |       0.019 |      0.313 | NO
+24    | 0.437 m   |          0.061 |       0.039 |      0.299 | NO
+24    | 0.412 m   |         -0.007 |       0.027 |      0.221 | NO
+24    | 0.360 m   |         -0.010 |       0.052 |      0.215 | NO
+24    | 0.300 m   |          0.008 |       0.024 |      0.218 | NO
+
+==================================================
+FINAL DIAGNOSIS
+==================================================
+1. Does the policy produce meaningful angular actions before reaching 0.35 m?
+   -> NO
+
+2. At approximately what clearance does angular response begin?
+   -> Never
+
+3. Does angular response increase as the obstacle gets closer?
+   -> NO
+
+4. Is the action correctly converted into physical angular velocity?
+   -> YES
+
+5. Is there evidence of an action/control pipeline bug?
+   -> NO
+
+6. Is the dominant problem that the POLICY produces too little angular action?
+   -> YES
+
+7. Or does the POLICY produce angular action but the robot fails to physically execute it?
+   -> NO
+
+==================================================
+FINAL DECISION
+==================================================
+POLICY / REWARD PROBLEM
+
+Evidence: The policy's normalized angular action averages only 0.040 across all danger clearances, translating to near-zero steering. The action pipeline executes this correctly, meaning the policy itself refuses to turn.

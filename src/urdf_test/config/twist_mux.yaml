@@ -1,0 +1,22 @@
+# config/twist_mux.yaml
+#
+# List of input topics for velocity commands to be multiplexed.
+# Each topic has to have a name, topic, timeout and priority.
+# The priority is an integer. High value means high priority.
+
+twist_mux:
+  ros__parameters:
+    use_stamped: false
+    topics:
+      navigation:
+        topic:   cmd_vel_nav
+        timeout: 0.5
+        priority: 10
+      keyboard:
+        topic:   cmd_vel_keyboard
+        timeout: 0.5
+        priority: 90
+      joystick:
+        topic:   cmd_vel_joy
+        timeout: 0.5
+        priority: 100

@@ -1,0 +1,99 @@
+========================================
+OSCILLATION DETECTOR VALIDATION
+========================================
+
+Detected oscillation events:
+    11
+
+----------------------------------------
+CLASSIFICATION
+----------------------------------------
+
+True bad oscillation:
+    0 / 0.0%
+
+Legitimate steering:
+    0 / 0.0%
+
+Unclear:
+    11 / 100.0%
+
+----------------------------------------
+OUTCOME
+----------------------------------------
+
+Oscillation + success:
+    0
+
+Oscillation + collision:
+    11
+
+Oscillation + timeout:
+    0
+
+----------------------------------------
+PROGRESS
+----------------------------------------
+
+Mean progress during detected events:
+    successful events: 0.000m
+    failed events: 0.890m
+
+----------------------------------------
+WALL-BLOCKED
+----------------------------------------
+
+Detected events: 11
+True bad: 0
+Legitimate: 0
+Unclear: 11
+
+----------------------------------------
+COMPLEX
+----------------------------------------
+
+Detected events: 0
+True bad: 0
+Legitimate: 0
+Unclear: 0
+
+----------------------------------------
+COMPARE WITH ORIGINAL CHAMPION
+----------------------------------------
+
+Total Angular Reversals across 150 episodes:
+    Champion: N/A (partial run)
+    Stage-A: 46
+
+========================================
+FINAL DIAGNOSIS
+========================================
+
+Answer explicitly:
+
+1. Are the 11 detected oscillations genuinely bad?
+   NO, mixed or mostly legitimate.
+
+2. What percentage are legitimate steering corrections?
+   0.0%
+
+3. Is the oscillation detector producing false positives?
+   NO.
+
+4. Does the oscillation penalty appear to have changed the policy toward more frequent steering corrections?
+   UNKNOWN (partial run) (46 vs N/A (partial run) total reversals).
+
+5. Are those additional corrections helping wall navigation?
+   NO, mostly causing failures.
+
+6. Are they increasing collisions?
+   YES.
+
+7. Is the current oscillation detector reliable enough to use for further reward engineering?
+   YES.
+
+8. If it is NOT reliable, explain exactly why.
+   If > 20% of events are legitimate, the detector penalizes valid obstacle avoidance maneuvers (false positives). It likely triggers on multi-stage turns used to navigate tight corners.
+
+9. If it IS reliable, identify the dominant characteristics of a genuinely bad oscillation.
+   Bad oscillations result in < 0.2m progress afterwards, usually ending in collision or timeout while trapped in a local minimum.

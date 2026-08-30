@@ -1,0 +1,25 @@
+==================================================
+OBSTACLE EVENT DIAGNOSTIC
+==================================================
+Episodes evaluated: 40
+Total obstacle encounters: 28
+
+Successful avoidance: 13 (46.4%)
+Successful critical recovery: 3 (10.7%)
+
+Front collisions: 2 (7.1%)
+Wrong-direction commitments: 10 (35.7%)
+Stuck/freezing events: 0 (0.0%)
+
+Mean minimum clearance: 0.343 m
+Mean time to first turn: 34.2 steps
+Mean clearance at first turn: 0.340 m
+Mean clearance recovery: 0.040 m
+
+Forward motion during danger: 65.9%
+Backward motion during danger: 0.0%
+Stationary during danger: 34.0%
+
+==================================================
+INTERPRETATION
+==================================================
