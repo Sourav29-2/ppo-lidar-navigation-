@@ -287,7 +287,7 @@ def main():
     # ── Load PPO Actor ────────────────────────────────────────────────────────
     device = torch.device("cpu")
     actor  = Actor(observation_dim=50, action_dim=2).to(device)
-    ckpt   = torch.load(str(CHECKPOINT), map_location=device)
+    ckpt   = torch.load(str(CHECKPOINT), map_location=device, weights_only=False)
     # Handle both raw state_dict and wrapped checkpoint formats
     state  = ckpt.get("actor_state_dict", ckpt.get("model_state_dict", ckpt))
     actor.load_state_dict(state)
