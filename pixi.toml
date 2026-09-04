@@ -55,6 +55,7 @@ shapely = ">=2.1.2,<3"
 ros-humble-rviz2 = ">=11.2.0,<12"
 ros-humble-nav2-rviz-plugins = "*"
 ros-humble-gazebo-ros-pkgs = ">=3.7.0,<4"
+ros-humble-teleop-twist-keyboard = ">=2.4.1,<3"
 
 
 [pypi-dependencies]

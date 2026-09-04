@@ -788,6 +788,7 @@ environments:
       - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-std-msgs-4.9.1-np2py312h2ed9cc7_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-std-srvs-4.9.1-np2py312h2ed9cc7_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-stereo-msgs-4.9.1-np2py312h2ed9cc7_18.conda
+      - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-teleop-twist-keyboard-2.4.1-np2py312h2ed9cc7_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-tf2-0.25.20-np2py312h2ed9cc7_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-tf2-bullet-0.25.20-np2py312h2ed9cc7_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-tf2-eigen-0.25.20-np2py312h3ba0a76_18.conda
@@ -1565,6 +1566,7 @@ environments:
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-std-msgs-4.9.1-np2py312h50b1e4c_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-std-srvs-4.9.1-np2py312h50b1e4c_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-stereo-msgs-4.9.1-np2py312h50b1e4c_18.conda
+      - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-teleop-twist-keyboard-2.4.1-np2py312h50b1e4c_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-tf2-0.25.20-np2py312h50b1e4c_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-tf2-bullet-0.25.20-np2py312h50b1e4c_18.conda
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-tf2-eigen-0.25.20-np2py312h5d86c6b_18.conda
@@ -22625,6 +22627,25 @@ packages:
   license: Apache-2.0
   size: 78812
   timestamp: 1778997324892
+- conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-teleop-twist-keyboard-2.4.1-np2py312h2ed9cc7_18.conda
+  sha256: 31cadfb29b73c529eba15a7444f1b54e849664c0adbbc2b85fbc88db4fac76dd
+  md5: e100913b59298868b85a6c6ad5d0b693
+  depends:
+  - python
+  - ros-humble-geometry-msgs
+  - ros-humble-rcl-interfaces
+  - ros-humble-rclpy
+  - ros-humble-ros-workspace
+  - ros2-distro-mutex 0.9.* humble_*
+  - libgcc >=14
+  - __glibc >=2.17,<3.0.a0
+  - libstdcxx >=14
+  - ros2-distro-mutex >=0.9.0,<0.10.0a0
+  - python_abi 3.12.* *_cp312
+  - numpy >=1.23,<3
+  license: BSD-2-Clause
+  size: 23644
+  timestamp: 1778998022986
 - conda: https://conda.anaconda.org/robostack-staging/linux-64/ros-humble-tf2-0.25.20-np2py312h2ed9cc7_18.conda
   sha256: a17102644096598d90f7b71385181d33d9cd94034d763aa53aad5e7baa9ca854
   md5: 97b5d0acdcef01c6050dc65bf214c202
@@ -28460,6 +28481,24 @@ packages:
   license: Apache-2.0
   size: 76242
   timestamp: 1778828928801
+- conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-teleop-twist-keyboard-2.4.1-np2py312h50b1e4c_18.conda
+  sha256: ed1d5ad9e0c60bfd13fec7c8ff633fb0827ba6d92988f353be70b2451921b118
+  md5: af30980126c8240d8ae61501434da8de
+  depends:
+  - python
+  - ros-humble-geometry-msgs
+  - ros-humble-rcl-interfaces
+  - ros-humble-rclpy
+  - ros-humble-ros-workspace
+  - ros2-distro-mutex 0.9.* humble_*
+  - __osx >=11.0
+  - libcxx >=18
+  - ros2-distro-mutex >=0.9.0,<0.10.0a0
+  - numpy >=1.23,<3
+  - python_abi 3.12.* *_cp312
+  license: BSD-2-Clause
+  size: 24152
+  timestamp: 1778831690846
 - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-tf2-0.25.20-np2py312h50b1e4c_18.conda
   sha256: 6c44179cd3041171993f07b68cbacaedc78f32c7c0d49ef5748ee90ae18522ad
   md5: ab0824ad72fcb8dd3c6e21ce074345c6
