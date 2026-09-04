@@ -5,8 +5,8 @@
 # =============================================================================
 set -e
 
-REPO_URL="https://github.com/Sourav29-2/ppo-lidar-nav.git"
-REPO_DIR="$HOME/ppo-lidar-nav"
+REPO_URL="https://github.com/Sourav29-2/ppo-lidar-navigation-.git"
+REPO_DIR="$HOME/ppo-lidar-navigation-"
 
 echo "════════════════════════════════════════════════════════"
 echo "  PPO LiDAR Navigation — WSL2 / Linux Setup"
@@ -49,6 +49,6 @@ echo "════════════════════════�
 echo "  ✅ Setup complete!"
 echo ""
 echo "  Next steps:"
-echo "    cd ~/ppo-lidar-nav"
+echo "    cd ~/ppo-lidar-navigation-"
 echo "    ./demo.sh"
 echo "════════════════════════════════════════════════════════"

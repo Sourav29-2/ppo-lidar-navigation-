@@ -80,8 +80,8 @@ Zero oscillations. Zero fallback triggers.
 ### 1. Clone & Setup
 
 ```bash
-git clone https://github.com/Sourav29-2/ppo-lidar-nav.git
-cd ppo-lidar-nav
+git clone https://github.com/Sourav29-2/ppo-lidar-navigation-.git
+cd ppo-lidar-navigation-
 bash setup/setup_mac.sh
 ```
 
@@ -118,13 +118,13 @@ Restart when prompted.
 ### Step 2 — Inside the Ubuntu WSL2 terminal
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Sourav29-2/ppo-lidar-nav/master/setup/setup_wsl_inner.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Sourav29-2/ppo-lidar-navigation-/master/setup/setup_wsl_inner.sh | bash
 ```
 
 ### Step 3 — Run
 
 ```bash
-cd ~/ppo-lidar-nav
+cd ~/ppo-lidar-navigation-
 ./demo.sh
 ```
 
@@ -135,7 +135,7 @@ cd ~/ppo-lidar-nav
 ## Repository Structure
 
 ```
-ppo-lidar-nav/
+ppo-lidar-navigation-/
 │
 ├── demo.py                  # Interactive RViz demo (inference only)
 ├── demo.sh                  # One-command launcher

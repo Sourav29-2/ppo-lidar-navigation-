@@ -25,7 +25,7 @@ After restarting, Ubuntu will open automatically. Create a username and password
 Copy-paste this **single command**:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Sourav29-2/ppo-lidar-nav/master/setup/setup_wsl_inner.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Sourav29-2/ppo-lidar-navigation-/master/setup/setup_wsl_inner.sh | bash
 ```
 
 This will:
@@ -41,7 +41,7 @@ This will:
 After setup completes:
 
 ```bash
-cd ppo-lidar-nav
+cd ppo-lidar-navigation-
 ./demo.sh
 ```
 
