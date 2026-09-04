@@ -2,7 +2,7 @@
 authors = ["Sourav29-2 <sourav9835359245@gmail.com>"]
 channels = ["conda-forge", "robostack-staging"]
 name = "ppo_lidar_navigation"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
 [activation]
