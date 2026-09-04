@@ -24,7 +24,7 @@ Panels:
       - /Current View1
     Name: Views
     Splitter Ratio: 0.5
-  - Class: nav2_rviz_plugins/Navigation2Panel
+  - Class: nav2_rviz_plugins/Navigation 2
     Name: Navigation2
 Visualization Manager:
   Class: ""
