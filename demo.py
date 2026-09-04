@@ -35,7 +35,8 @@ from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data, QoSProfile, DurabilityPolicy
 from geometry_msgs.msg import Twist, PoseStamped, PoseWithCovarianceStamped
 from sensor_msgs.msg import LaserScan
-from nav_msgs.msg import Odometry, Path
+from nav_msgs.msg import Odometry
+import nav_msgs.msg as nav_msgs
 from visualization_msgs.msg import Marker
 from std_msgs.msg import ColorRGBA
 import tf2_ros
@@ -91,7 +92,7 @@ class DemoNode(Node):
         self.create_subscription(LaserScan,   "/scan",       self._scan_cb,   10)
         self.create_subscription(Odometry,    "/odom",       self._odom_cb,   10)
         self.create_subscription(Clock,       "/clock",      self._clock_cb,  qos_profile_sensor_data)
-        self.create_subscription(Path,        "/plan",       self._path_cb,   10)
+        self.create_subscription(nav_msgs.Path,        "/plan",       self._path_cb,   10)
         # This is the topic RViz's "Nav2 Goal" button publishes to
         self.create_subscription(PoseStamped, "/goal_pose",  self._goal_cb,   10)
 

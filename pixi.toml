@@ -52,6 +52,8 @@ matplotlib = ">=3.11.1,<4"
 libopencv = { version = "*", build = "*headless*" }
 pandas = ">=3.0.5,<4"
 shapely = ">=2.1.2,<3"
+ros-humble-rviz2 = ">=11.2.0,<12"
+ros-humble-gazebo-ros-pkgs = ">=3.7.0,<4"
 
 
 [pypi-dependencies]
