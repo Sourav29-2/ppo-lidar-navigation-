@@ -4,8 +4,8 @@
 # =============================================================================
 #
 #  USAGE (copy-paste into your terminal):
-#    git clone https://github.com/Sourav29-2/ppo-lidar-navigation-.git
-#    cd ppo-lidar-navigation-
+#    git clone https://github.com/Sourav29-2/ppo-lidar-nav.git
+#    cd ppo-lidar-nav
 #    bash setup/setup_mac.sh
 #
 # =============================================================================

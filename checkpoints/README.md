@@ -9,7 +9,7 @@
 ## Intermediate checkpoints (available in GitHub Releases)
 
 All intermediate training checkpoints (~50 MB total) are available as a zip in
-[GitHub Releases](https://github.com/Sourav29-2/ppo-lidar-navigation-/releases).
+[GitHub Releases](https://github.com/Sourav29-2/ppo-lidar-nav/releases).
 
 | Checkpoint | Phase | Success Rate |
 |---|---|---|

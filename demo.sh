@@ -45,7 +45,7 @@ fi
 if [ ! -f "$PROJECT_WS/checkpoints/hybrid_phase5/best_success.pt" ]; then
     echo "❌ Champion checkpoint not found."
     echo "   Run: python training/train_phase5_safety.py"
-    echo "   Or download it from: https://github.com/Sourav29-2/ppo-lidar-navigation-igation-/releases"
+    echo "   Or download it from: https://github.com/Sourav29-2/ppo-lidar-nav/releases"
     exit 1
 fi
 
