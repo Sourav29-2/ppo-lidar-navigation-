@@ -26,7 +26,6 @@
 set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-ROS2_WS="/Users/souravkumar/ros2_study"
 PROJECT_WS="$SCRIPT_DIR"
 
 # ── Colours ──────────────────────────────────────────────────────────────────
@@ -38,17 +37,15 @@ echo "  ║   PPO LiDAR Navigation — Interactive Demo Launcher  ║"
 echo "  ╚══════════════════════════════════════════════════════╝"
 echo -e "${NC}"
 
-# ── Sanity checks ─────────────────────────────────────────────────────────────
-if [ ! -f "$ROS2_WS/install/setup.bash" ]; then
-    echo "❌ ros2_study workspace not found at $ROS2_WS"
-    echo "   Please update ROS2_WS in demo.sh to point to your ROS2 workspace."
-    exit 1
+# ── Ensure ROS 2 is available ────────────────────────────────────────────────
+if ! command -v ros2 &> /dev/null; then
+    echo "⚙️  Activating pixi environment for ROS 2..."
+    eval "$(pixi shell-hook -e default 2>/dev/null)" || true
 fi
-
 if [ ! -f "$PROJECT_WS/checkpoints/hybrid_phase5/best_success.pt" ]; then
     echo "❌ Champion checkpoint not found."
     echo "   Run: python training/train_phase5_safety.py"
-    echo "   Or download it from: https://github.com/Sourav29-2/ppo-lidar-navigation-/releases"
+    echo "   Or download it from: https://github.com/Sourav29-2/ppo-lidar-navigation-igation-/releases"
     exit 1
 fi
 
@@ -60,8 +57,6 @@ export MKL_NUM_THREADS=1
 export OPENBLAS_NUM_THREADS=1
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-# Source ROS2 workspace (for Gazebo, Nav2, RViz binaries)
-source "$ROS2_WS/install/setup.bash"
 # Source this project's colcon build
 source "$PROJECT_WS/install/setup.bash" 2>/dev/null || true
 
