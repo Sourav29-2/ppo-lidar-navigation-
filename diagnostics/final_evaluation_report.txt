@@ -1,0 +1,139 @@
+============================================================
+FINAL HYBRID PPO VALIDATION REPORT — PHASE 5 SAFETY MODEL
+============================================================
+
+Checkpoint   : /Users/souravkumar/Documents/Codex/2026-08-06/PPO_lidar_navigation/checkpoints/hybrid_phase5/best_success.pt
+Scenarios    : 150 (from benchmark_150_scenarios.json)
+Strict threshold : distance_to_goal <= 0.25 m
+Env threshold    : 0.5 m (internal, unchanged)
+
+============================================================
+1. FINAL PERFORMANCE
+============================================================
+  Total episodes : 150
+  SUCCESS        : 124  (82.7%)
+  COLLISION      :  24  (16.0%)
+  TIMEOUT        :   2  (1.3%)
+
+  Per-category breakdown:
+  Category                    N  Success%  Collision%  Timeout%
+  --------------------------------------------------------------
+  BOTTOM_LEFT                10      90.0%        10.0%       0.0%
+  BOTTOM_RIGHT               10      90.0%        10.0%       0.0%
+  COMPLEX OBSTACLE           30      73.3%        26.7%       0.0%
+  EASY / OPEN                30      90.0%        10.0%       0.0%
+  RANDOM                     20      90.0%        10.0%       0.0%
+  TOP_LEFT                   10     100.0%         0.0%       0.0%
+  TOP_RIGHT                  10      70.0%        20.0%      10.0%
+  WALL-BLOCKED               30      73.3%        23.3%       3.3%
+
+  Mean min clearance (all) : 0.419 m
+  Mean min clearance (success) : 0.444 m
+  Mean path length         : 12.47 m
+  Mean episode steps       : 290
+  Oscillation events       : 0
+  No-turn events           : 0
+
+============================================================
+2. COMPARISON WITH PREVIOUS MODELS
+============================================================
+  Metric                            Original Champion  Hybrid Phase4  Phase5 Safety
+  ----------------------------------------------------------------------------------
+  Overall Success (0.25m)                       52.0%          64.2%          82.7%
+  Overall Collision                             32.7%          26.3%          16.0%
+  Overall Timeout                               15.3%           9.5%           1.3%
+  Easy/Open Success                             86.7%            N/A          90.0%
+  Wall-Blocked Success                          43.3%            N/A          73.3%
+  Complex Success                               26.7%            N/A          73.3%
+
+============================================================
+3. FAILURE COUNT AND PERCENTAGE BY CAUSE
+============================================================
+  Total failures : 26 / 150 (17.3%)
+
+  Root Cause                           Count  % of Failures  % of Total
+  ----------------------------------------------------------------------
+  EXCESSIVE_SPEED                         14          53.8%        9.3%
+  LATE_OBSTACLE_REACTION                   7          26.9%        4.7%
+  WRONG_LOCAL_MANEUVER                     3          11.5%        2.0%
+  TIMEOUT_LOW_PROGRESS                     2           7.7%        1.3%
+
+============================================================
+4. EVIDENCE FOR EACH FAILURE CATEGORY
+============================================================
+
+  [EXCESSIVE_SPEED] — 14 episodes
+    • EASY / OPEN_20 | EASY / OPEN | dist=2.544m | clear=0.300m | lin=0.111m/s
+      Evidence: Max linear vel=0.331 m/s during approach. min_clearance_last20=0.302m
+    • EASY / OPEN_21 | EASY / OPEN | dist=7.480m | clear=0.300m | lin=0.210m/s
+      Evidence: Max linear vel=0.335 m/s during approach. min_clearance_last20=0.300m
+    • EASY / OPEN_24 | EASY / OPEN | dist=0.739m | clear=0.300m | lin=0.226m/s
+      Evidence: Max linear vel=0.346 m/s during approach. min_clearance_last20=0.303m
+    • WALL-BLOCKED_3 | WALL-BLOCKED | dist=6.237m | clear=0.300m | lin=0.094m/s
+      Evidence: Max linear vel=0.315 m/s during approach. min_clearance_last20=0.300m
+    • WALL-BLOCKED_8 | WALL-BLOCKED | dist=6.251m | clear=0.300m | lin=0.145m/s
+      Evidence: Max linear vel=0.339 m/s during approach. min_clearance_last20=0.301m
+    ... and 9 more (see final_failure_diagnostics.csv)
+
+  [LATE_OBSTACLE_REACTION] — 7 episodes
+    • WALL-BLOCKED_14 | WALL-BLOCKED | dist=0.361m | clear=0.300m | lin=0.263m/s
+      Evidence: High forward velocity (0.260 m/s) with dropping clearance (0.304m) in final 20 steps.
+    • COMPLEX OBSTACLE_2 | COMPLEX OBSTACLE | dist=7.277m | clear=0.300m | lin=0.143m/s
+      Evidence: High forward velocity (0.174 m/s) with dropping clearance (0.304m) in final 20 steps.
+    • COMPLEX OBSTACLE_14 | COMPLEX OBSTACLE | dist=2.549m | clear=0.300m | lin=0.261m/s
+      Evidence: High forward velocity (0.248 m/s) with dropping clearance (0.300m) in final 20 steps.
+    • COMPLEX OBSTACLE_18 | COMPLEX OBSTACLE | dist=3.732m | clear=0.300m | lin=0.286m/s
+      Evidence: High forward velocity (0.245 m/s) with dropping clearance (0.300m) in final 20 steps.
+    • TOP_RIGHT_1 | TOP_RIGHT | dist=1.766m | clear=0.300m | lin=0.260m/s
+      Evidence: High forward velocity (0.285 m/s) with dropping clearance (0.300m) in final 20 steps.
+    ... and 2 more (see final_failure_diagnostics.csv)
+
+  [WRONG_LOCAL_MANEUVER] — 3 episodes
+    • WALL-BLOCKED_18 | WALL-BLOCKED | dist=6.644m | clear=0.300m | lin=0.084m/s
+      Evidence: Low clearance (0.300m) with low angular response (0.028 rad/s) — failed to turn away from obstacle.
+    • WALL-BLOCKED_25 | WALL-BLOCKED | dist=3.263m | clear=0.300m | lin=0.096m/s
+      Evidence: Low clearance (0.300m) with low angular response (0.026 rad/s) — failed to turn away from obstacle.
+    • COMPLEX OBSTACLE_23 | COMPLEX OBSTACLE | dist=7.646m | clear=0.300m | lin=0.033m/s
+      Evidence: Low clearance (0.300m) with low angular response (0.005 rad/s) — failed to turn away from obstacle.
+
+  [TIMEOUT_LOW_PROGRESS] — 2 episodes
+    • WALL-BLOCKED_6 | WALL-BLOCKED | dist=0.366m | clear=0.301m | lin=0.244m/s
+      Evidence: Timeout with minimal progress. Δdist=0.11m | final_dist=0.37m
+    • TOP_RIGHT_5 | TOP_RIGHT | dist=7.195m | clear=0.300m | lin=0.062m/s
+      Evidence: Timeout with minimal progress. Δdist=0.27m | final_dist=7.19m
+
+============================================================
+5. MOST COMMON REMAINING FAILURE
+============================================================
+  Primary failure  : EXCESSIVE_SPEED
+  Count            : 14 / 26 failures (53.8%)
+  Secondary failure: LATE_OBSTACLE_REACTION
+  Count            : 7 / 26 failures (26.9%)
+
+============================================================
+6. BOTTLENECK ANALYSIS: NAV2 vs PPO
+============================================================
+  PPO local-control failures  : 24 (92.3% of failures)
+  Nav2 / path-level failures  : 2 (7.7% of failures)
+  Unclassified (OTHER)        : 0 (0.0% of failures)
+
+  CONCLUSION: PPO LOCAL CONTROL is the primary bottleneck.
+  Nav2 path planning is not the limiting factor.
+
+============================================================
+7. IS FURTHER FINE-TUNING JUSTIFIED?
+============================================================
+  Success rate is 82.7%. Performance is GOOD but improvement room exists.
+  Further fine-tuning IS justified if the top failure cause is addressable.
+  Top cause 'EXCESSIVE_SPEED' may be addressable with targeted reward shaping.
+
+============================================================
+8. FINAL RECOMMENDATION
+============================================================
+  Verdict: CONTINUE (optional)
+  The model achieves 82.7% success. Strong but not exceptional.
+  Consider one more fine-tuning round targeting 'EXCESSIVE_SPEED'.
+
+============================================================
+END OF REPORT
+============================================================

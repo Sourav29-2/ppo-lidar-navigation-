@@ -146,6 +146,7 @@ class GazeboMacNavEnv(gym.Env):
         # Oscillation-aware diagnostics
         self._diag_oscillation_events = 0
         self._diag_total_oscillation_penalty = 0.0
+        self._diag_total_safety_margin = 0.0
         
         self.angular_history = []
         self.last_meaningful_turn_direction = 0
@@ -568,6 +569,26 @@ class GazeboMacNavEnv(gym.Env):
                     oscillation_penalty = -0.25
                     self._diag_oscillation_events += 1
 
+        # PART NEW: Safety Margin Penalty
+        safety_margin_penalty = 0.0
+        SAFETY_WARNING_DIST = 0.60
+        SAFETY_CRITICAL_DIST = 0.35
+        MAX_SAFETY_PENALTY = -2.0
+
+        if current_min_laser < SAFETY_WARNING_DIST and linear_vel > 0.0:
+            speed_factor = linear_vel / 0.4
+            
+            if current_min_laser > SAFETY_CRITICAL_DIST:
+                proximity_factor = (SAFETY_WARNING_DIST - current_min_laser) / (SAFETY_WARNING_DIST - SAFETY_CRITICAL_DIST)
+            else:
+                proximity_factor = 1.0
+                
+            trend_factor = 1.0
+            if clearance_change > 0:
+                trend_factor = 0.0
+                
+            safety_margin_penalty = MAX_SAFETY_PENALTY * speed_factor * proximity_factor * trend_factor
+
         self.prev_distance_to_goal = distance_to_final_goal
         self.prev_distance_to_wp = raw_D_wp
 
@@ -612,6 +633,7 @@ class GazeboMacNavEnv(gym.Env):
             + success_reward
             + collision_penalty
             + oscillation_penalty
+            + safety_margin_penalty
         )
 
         # Pack reward components into info for diagnostics (PART 8)
@@ -624,6 +646,7 @@ class GazeboMacNavEnv(gym.Env):
             "reverse_penalty": reverse_penalty,
             "reverse_recovery": reverse_recovery_reward,
             "oscillation_penalty": oscillation_penalty,
+            "safety_margin": safety_margin_penalty,
             "success": success_reward,
             "collision": collision_penalty,
             "total": reward,
@@ -639,6 +662,7 @@ class GazeboMacNavEnv(gym.Env):
             + reverse_penalty
             + reverse_recovery_reward
             + oscillation_penalty
+            + safety_margin_penalty
             + success_reward
             + collision_penalty
         )
@@ -669,6 +693,7 @@ class GazeboMacNavEnv(gym.Env):
             self._diag_total_reverse += reverse_recovery_reward
             self._diag_total_reverse_penalty += reverse_penalty
             self._diag_total_oscillation_penalty += oscillation_penalty
+            self._diag_total_safety_margin += safety_margin_penalty
             self._diag_total_success += success_reward
             self._diag_total_collision += collision_penalty
             self._diag_total_reward += reward
@@ -691,6 +716,7 @@ class GazeboMacNavEnv(gym.Env):
                     f"\n  Turning Penalty:       {turning_penalty:+.4f}"
                     f"\n  Time Penalty:          {time_penalty:+.4f}"
                     f"\n  Inflation Penalty:     {inflation_penalty:+.4f}"
+                    f"\n  Safety Margin Penalty: {safety_margin_penalty:+.4f}"
                     f"\n  Reverse Penalty:       {reverse_penalty:+.4f}"
                     f"\n  Reverse Recovery:      {reverse_recovery_reward:+.4f}"
                     f"\n  Avoidance Pressure:    {avoidance_pressure_penalty:+.4f}"
@@ -731,6 +757,7 @@ class GazeboMacNavEnv(gym.Env):
                     f"\n  Avg turning penalty:       {self._diag_total_turning/steps:+.4f}"
                     f"\n  Avg time penalty:          {self._diag_total_time/steps:+.4f}"
                     f"\n  Avg inflation penalty:     {self._diag_total_inflation/steps:+.4f}"
+                    f"\n  Avg safety margin pen:     {self._diag_total_safety_margin/steps:+.4f}"
                     f"\n  Avg reverse penalty:       {self._diag_total_reverse_penalty/steps:+.4f}"
                     f"\n  Avg reverse reward:        {self._diag_total_reverse/steps:+.4f}"
                     f"\n  Avg avoidance penalty:     {self._diag_total_avoidance_penalty/steps:+.4f}"
@@ -791,6 +818,7 @@ class GazeboMacNavEnv(gym.Env):
         self._diag_success_count = 0
         self._diag_total_progress = 0.0
         self._diag_total_clearance = 0.0
+        self._diag_total_safety_margin = 0.0
         self._diag_total_turning = 0.0
         self._diag_total_time = 0.0
         self._diag_total_inflation = 0.0

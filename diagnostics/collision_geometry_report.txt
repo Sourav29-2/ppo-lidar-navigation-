@@ -1,0 +1,238 @@
+======================================================================
+COLLISION GEOMETRY ANALYSIS — PHASE 5 SAFETY MODEL
+24 Collision Episodes — Geometry-First Reclassification
+======================================================================
+
+Robot footprint: TurtleBot3 Burger, r=0.105m, diameter=0.210m
+Strict LiDAR contact threshold: 0.300m (Gazebo collision sensor)
+NARROW corridor definition: min_clearance ≤ 0.350m
+
+──────────────────────────────────────────────────────────────────────
+PER-EPISODE CLASSIFICATION
+──────────────────────────────────────────────────────────────────────
+  ID                                  Cat                  Steps  MaxV  L20lin  L20ang  L20lid GEO_CAUSE
+  -------------------------------------------------------------------------------------------------------------------
+  EASY / OPEN_20                      EASY / OPEN            172 0.331   0.003   0.004   0.302 NARROW_PASSAGE
+  EASY / OPEN_21                      EASY / OPEN            168 0.335   0.002   0.013   0.300 NARROW_PASSAGE
+  EASY / OPEN_24                      EASY / OPEN            179 0.346   0.002   0.011   0.303 NARROW_PASSAGE
+  WALL-BLOCKED_3                      WALL-BLOCKED           121 0.315   0.012   0.020   0.300 NARROW_PASSAGE
+  WALL-BLOCKED_8                      WALL-BLOCKED            92 0.339   0.002   0.034   0.300 UNSAFE_NAV2_PATH
+  WALL-BLOCKED_14                     WALL-BLOCKED           320 0.428   0.260   0.122   0.304 LATE_REACTION
+  WALL-BLOCKED_18                     WALL-BLOCKED           165 0.250   0.002   0.028   0.300 NARROW_PASSAGE
+  WALL-BLOCKED_20                     WALL-BLOCKED           207 0.336   0.013   0.053   0.300 NARROW_PASSAGE
+  WALL-BLOCKED_25                     WALL-BLOCKED            83 0.292   0.007   0.026   0.300 UNSAFE_NAV2_PATH
+  WALL-BLOCKED_28                     WALL-BLOCKED           228 0.337   0.002   0.011   0.302 NARROW_PASSAGE
+  COMPLEX OBSTACLE_2                  COMPLEX OBSTACLE       181 0.347   0.174   0.165   0.304 LATE_REACTION
+  COMPLEX OBSTACLE_8                  COMPLEX OBSTACLE       251 0.337   0.007   0.033   0.300 NARROW_PASSAGE
+  COMPLEX OBSTACLE_14                 COMPLEX OBSTACLE       210 0.337   0.248   0.270   0.300 SPEED_DURING_TURN
+  COMPLEX OBSTACLE_17                 COMPLEX OBSTACLE       266 0.338   0.003   0.037   0.301 NARROW_PASSAGE
+  COMPLEX OBSTACLE_18                 COMPLEX OBSTACLE       281 0.337   0.245   0.399   0.300 SPEED_DURING_TURN
+  COMPLEX OBSTACLE_20                 COMPLEX OBSTACLE       121 0.316  -0.003   0.057   0.300 NARROW_PASSAGE
+  COMPLEX OBSTACLE_23                 COMPLEX OBSTACLE       312 0.278   0.001   0.005   0.300 OTHER
+  COMPLEX OBSTACLE_26                 COMPLEX OBSTACLE       285 0.340   0.007   0.032   0.300 NARROW_PASSAGE
+  TOP_RIGHT_1                         TOP_RIGHT              226 0.341   0.285   0.289   0.300 SPEED_DURING_TURN
+  TOP_RIGHT_2                         TOP_RIGHT              183 0.336   0.293   0.245   0.300 LATE_REACTION
+  BOTTOM_LEFT_8                       BOTTOM_LEFT            369 0.336   0.001   0.004   0.301 NARROW_PASSAGE
+  BOTTOM_RIGHT_9                      BOTTOM_RIGHT           152 0.334  -0.004   0.022   0.301 NARROW_PASSAGE
+  RANDOM_4                            RANDOM                 217 0.336   0.000   0.012   0.302 NARROW_PASSAGE
+  RANDOM_18                           RANDOM                 184 0.339   0.285   0.264   0.300 SPEED_DURING_TURN
+
+======================================================================
+GEOMETRY CAUSE SUMMARY
+======================================================================
+  Total collision episodes : 24
+
+  Geometric Cause                 Count  % Collisions  % All Episodes
+  --------------------------------------------------------------------
+  NARROW_PASSAGE                     14         58.3%            9.3%
+  SPEED_DURING_TURN                   4         16.7%            2.7%
+  LATE_REACTION                       3         12.5%            2.0%
+  UNSAFE_NAV2_PATH                    2          8.3%            1.3%
+  OTHER                               1          4.2%            0.7%
+
+======================================================================
+6-QUESTION FLAG SUMMARY (episodes where flag=TRUE)
+======================================================================
+  Q1 Obstacle immediately ahead at start          2 / 24  (8.3%)
+  Q2 Narrow side passage / tight clearance       23 / 24  (95.8%)
+  Q3 Collision while turning (low linear)         0 / 24  (0.0%)
+  Q4 High speed during turn                       4 / 24  (16.7%)
+  Q5 Nav2 path geometrically unsafe               2 / 24  (8.3%)
+  Q6 PPO deviated from safe Nav2 path             7 / 24  (29.2%)
+
+======================================================================
+PER-CAUSE EVIDENCE
+======================================================================
+
+  [NARROW_PASSAGE] — 14 episode(s) (58.3% of collisions)
+  Scenarios: EASY / OPEN_20, EASY / OPEN_21, EASY / OPEN_24, WALL-BLOCKED_3, WALL-BLOCKED_18, WALL-BLOCKED_20, WALL-BLOCKED_28, COMPLEX OBSTACLE_8, COMPLEX OBSTACLE_17, COMPLEX OBSTACLE_20, COMPLEX OBSTACLE_26, BOTTOM_LEFT_8, BOTTOM_RIGHT_9, RANDOM_4
+
+    • EASY / OPEN_20
+      category=EASY / OPEN | steps=172 | max_lin=0.331 | l20_lin=0.003 | l20_ang=0.004 | l20_lidar=0.302
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • EASY / OPEN_21
+      category=EASY / OPEN | steps=168 | max_lin=0.335 | l20_lin=0.002 | l20_ang=0.013 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • EASY / OPEN_24
+      category=EASY / OPEN | steps=179 | max_lin=0.346 | l20_lin=0.002 | l20_ang=0.011 | l20_lidar=0.303
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • WALL-BLOCKED_3
+      category=WALL-BLOCKED | steps=121 | max_lin=0.315 | l20_lin=0.012 | l20_ang=0.020 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • WALL-BLOCKED_18
+      category=WALL-BLOCKED | steps=165 | max_lin=0.250 | l20_lin=0.002 | l20_ang=0.028 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • WALL-BLOCKED_20
+      category=WALL-BLOCKED | steps=207 | max_lin=0.336 | l20_lin=0.013 | l20_ang=0.053 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • WALL-BLOCKED_28
+      category=WALL-BLOCKED | steps=228 | max_lin=0.337 | l20_lin=0.002 | l20_ang=0.011 | l20_lidar=0.302
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • COMPLEX OBSTACLE_8
+      category=COMPLEX OBSTACLE | steps=251 | max_lin=0.337 | l20_lin=0.007 | l20_ang=0.033 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • COMPLEX OBSTACLE_17
+      category=COMPLEX OBSTACLE | steps=266 | max_lin=0.338 | l20_lin=0.003 | l20_ang=0.037 | l20_lidar=0.301
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • COMPLEX OBSTACLE_20
+      category=COMPLEX OBSTACLE | steps=121 | max_lin=0.316 | l20_lin=-0.003 | l20_ang=0.057 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • COMPLEX OBSTACLE_26
+      category=COMPLEX OBSTACLE | steps=285 | max_lin=0.340 | l20_lin=0.007 | l20_ang=0.032 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • BOTTOM_LEFT_8
+      category=BOTTOM_LEFT | steps=369 | max_lin=0.336 | l20_lin=0.001 | l20_ang=0.004 | l20_lidar=0.301
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • BOTTOM_RIGHT_9
+      category=BOTTOM_RIGHT | steps=152 | max_lin=0.334 | l20_lin=-0.004 | l20_ang=0.022 | l20_lidar=0.301
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+    • RANDOM_4
+      category=RANDOM | steps=217 | max_lin=0.336 | l20_lin=0.000 | l20_ang=0.012 | l20_lidar=0.302
+      Q-flags: q2_narrow_passage
+      Rationale: min_clearance=0.300m throughout episode. Robot footprint (r=0.105m) was close to wall. Corridor too narrow for reliable passage.
+
+  [SPEED_DURING_TURN] — 4 episode(s) (16.7% of collisions)
+  Scenarios: COMPLEX OBSTACLE_14, COMPLEX OBSTACLE_18, TOP_RIGHT_1, RANDOM_18
+
+    • COMPLEX OBSTACLE_14
+      category=COMPLEX OBSTACLE | steps=210 | max_lin=0.337 | l20_lin=0.248 | l20_ang=0.270 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage, q4_speed_during_turn, q6_ppo_deviated
+      Rationale: High forward velocity during turn: l20_linear=0.248 m/s, l20_angular=0.270 rad/s, max_vel=0.337 m/s. Robot approached curved obstacle at speed it could not brake from.
+    • COMPLEX OBSTACLE_18
+      category=COMPLEX OBSTACLE | steps=281 | max_lin=0.337 | l20_lin=0.245 | l20_ang=0.399 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage, q4_speed_during_turn, q6_ppo_deviated
+      Rationale: High forward velocity during turn: l20_linear=0.245 m/s, l20_angular=0.399 rad/s, max_vel=0.337 m/s. Robot approached curved obstacle at speed it could not brake from.
+    • TOP_RIGHT_1
+      category=TOP_RIGHT | steps=226 | max_lin=0.341 | l20_lin=0.285 | l20_ang=0.289 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage, q4_speed_during_turn, q6_ppo_deviated
+      Rationale: High forward velocity during turn: l20_linear=0.285 m/s, l20_angular=0.289 rad/s, max_vel=0.341 m/s. Robot approached curved obstacle at speed it could not brake from.
+    • RANDOM_18
+      category=RANDOM | steps=184 | max_lin=0.339 | l20_lin=0.285 | l20_ang=0.264 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage, q4_speed_during_turn, q6_ppo_deviated
+      Rationale: High forward velocity during turn: l20_linear=0.285 m/s, l20_angular=0.264 rad/s, max_vel=0.339 m/s. Robot approached curved obstacle at speed it could not brake from.
+
+  [LATE_REACTION] — 3 episode(s) (12.5% of collisions)
+  Scenarios: WALL-BLOCKED_14, COMPLEX OBSTACLE_2, TOP_RIGHT_2
+
+    • WALL-BLOCKED_14
+      category=WALL-BLOCKED | steps=320 | max_lin=0.428 | l20_lin=0.260 | l20_ang=0.122 | l20_lidar=0.304
+      Q-flags: q2_narrow_passage, q6_ppo_deviated
+      Rationale: Nav2 was active (fallback=0) but PPO maintained l20_linear=0.260 m/s into obstacle (clearance=0.304m). PPO failed to slow despite Nav2 providing a path. Late braking = LATE_REACTION.
+    • COMPLEX OBSTACLE_2
+      category=COMPLEX OBSTACLE | steps=181 | max_lin=0.347 | l20_lin=0.174 | l20_ang=0.165 | l20_lidar=0.304
+      Q-flags: q2_narrow_passage, q6_ppo_deviated
+      Rationale: Nav2 was active (fallback=0) but PPO maintained l20_linear=0.174 m/s into obstacle (clearance=0.304m). PPO failed to slow despite Nav2 providing a path. Late braking = LATE_REACTION.
+    • TOP_RIGHT_2
+      category=TOP_RIGHT | steps=183 | max_lin=0.336 | l20_lin=0.293 | l20_ang=0.245 | l20_lidar=0.300
+      Q-flags: q2_narrow_passage, q6_ppo_deviated
+      Rationale: Nav2 was active (fallback=0) but PPO maintained l20_linear=0.293 m/s into obstacle (clearance=0.300m). PPO failed to slow despite Nav2 providing a path. Late braking = LATE_REACTION.
+
+  [UNSAFE_NAV2_PATH] — 2 episode(s) (8.3% of collisions)
+  Scenarios: WALL-BLOCKED_8, WALL-BLOCKED_25
+
+    • WALL-BLOCKED_8
+      category=WALL-BLOCKED | steps=92 | max_lin=0.339 | l20_lin=0.002 | l20_ang=0.034 | l20_lidar=0.300
+      Q-flags: q1_bad_start, q2_narrow_passage, q5_unsafe_nav2
+      Rationale: Fallback count=0 (Nav2 path absent/stale). Episode only 92 steps before collision. Nav2 could not provide a safe path through this geometry.
+    • WALL-BLOCKED_25
+      category=WALL-BLOCKED | steps=83 | max_lin=0.292 | l20_lin=0.007 | l20_ang=0.026 | l20_lidar=0.300
+      Q-flags: q1_bad_start, q2_narrow_passage, q5_unsafe_nav2
+      Rationale: Fallback count=0 (Nav2 path absent/stale). Episode only 83 steps before collision. Nav2 could not provide a safe path through this geometry.
+
+  [OTHER] — 1 episode(s) (4.2% of collisions)
+  Scenarios: COMPLEX OBSTACLE_23
+
+    • COMPLEX OBSTACLE_23
+      category=COMPLEX OBSTACLE | steps=312 | max_lin=0.278 | l20_lin=0.001 | l20_ang=0.005 | l20_lidar=0.300
+      Q-flags: none
+      Rationale: No dominant geometric pattern. min_c=0.300m, max_lin=0.278, l20_lin=0.001, l20_ang=0.005, steps=312.
+
+======================================================================
+ANSWERS TO THE 6 GEOMETRY QUESTIONS
+======================================================================
+
+Q1. Obstacle immediately ahead at episode start?
+    2/24 episodes had bad start geometry.
+    YES — 2 episode(s) show obstacle at start.
+
+Q2. Narrow side passage / insufficient robot footprint clearance?
+    23/24 episodes flag narrow corridor geometry.
+    YES — 23 collisions occurred where the corridor was ≤0.35m wide.
+    The robot diameter is 0.210m. Narrow passages leave <0.07m on each side.
+    These may be physically unavoidable with the current footprint.
+
+Q3. Collision while turning?
+    0/24 episodes show collision during a turn (high angular, low linear).
+    NO — No collision occurred primarily during a pure rotation maneuver.
+
+Q4. Collision caused by speed during turn?
+    4/24 episodes flag high speed + turning simultaneously.
+    YES — 4 episode(s): fast curved approach into tight geometry.
+
+Q5. Nav2 path itself geometrically unsafe?
+    2/24 episodes flagged for Nav2 path concern.
+    POSSIBLE in 2 case(s) — fallback was used or episode was very short.
+    Without raw Nav2 path coordinates we cannot confirm, but these are candidates.
+
+Q6. PPO deviated from an otherwise safe Nav2 path?
+    7/24 episodes show PPO continuing forward when Nav2 was active.
+    YES — 7 episodes: Nav2 was providing a path (fallback=0) but
+    PPO maintained linear velocity into the obstacle. PPO failed to brake.
+    This is a LATE_REACTION failure at the PPO local-control level.
+
+======================================================================
+ROOT CAUSE CONCLUSION
+======================================================================
+
+  Primary geometric cause  : NARROW_PASSAGE (14/24 = 58.3%)
+  Secondary cause          : SPEED_DURING_TURN (4/24 = 16.7%)
+
+  ── Velocity-control failures (LATE_REACTION + SPEED_DURING_TURN) : 7/24 (29.2%)
+  ── Pure geometry failures (NARROW + BAD_START + TURNING)         : 14/24 (58.3%)
+  ── Nav2 path failures (UNSAFE_NAV2_PATH)                         : 2/24 (8.3%)
+
+  CONCLUSION:
+  The dominant collision mechanism is VELOCITY-RELATED PPO local control.
+  The robot approaches obstacles at speed (max_vel > 0.28 m/s) and either:
+    a) Does not decelerate in time (LATE_REACTION), or
+    b) Maintains speed while curving toward tight geometry (SPEED_DURING_TURN).
+
+  The fix: penalise linear_vel > 0.20 m/s when any LiDAR sector < 0.45 m.
+  This is a PPO reward-shaping problem, NOT a Nav2 path geometry problem.
+
+======================================================================
+END OF GEOMETRY ANALYSIS
+======================================================================

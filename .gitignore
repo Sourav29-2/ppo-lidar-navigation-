@@ -1,4 +1,4 @@
-# Python
+# ─── Python ───────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *$py.class
@@ -9,36 +9,62 @@ htmlcov/
 venv/
 ENV/
 env/
+
+# ─── Pixi environment (local, not committed) ──────────────────────────────────
 .pixi/
-.pixi 2/
+".pixi 2"
 .pixi.nosync/
 
-# IDE
+# ─── IDE & OS ─────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 .DS_Store
+Thumbs.db
 
-# Logs and outputs
+# ─── ROS 2 build artifacts ────────────────────────────────────────────────────
+build/
+log/
+
+# ─── Logs & TensorBoard runs ──────────────────────────────────────────────────
 *.log
 runs/
 outputs/
 scratch/
-log/
-build/
-install/
 
-# Checkpoints and models
-checkpoints/
+# ─── Checkpoints: keep ONLY the final champion ────────────────────────────────
+checkpoints/**
+!checkpoints/
+!checkpoints/hybrid_phase5/
+!checkpoints/hybrid_phase5/best_success.pt
+!checkpoints/README.md
 checkpoints_backup/
 checkpoints_validation/
-*.pt
-*.pth
-*.zip
 
-# Temporary scripts
+# ─── Large raw diagnostic files (available in GitHub Releases) ────────────────
+diagnostics/champion_failure_trajectories.csv
+diagnostics/obstacle_events.csv
+diagnostics/obstacle_events.json
+diagnostics/collision_analysis_50ep.csv
+diagnostics/collision_analysis_50ep_summary.csv
+diagnostics/diagnostic_reward_trajectory.csv
+diagnostics/benchmark_episode_results.csv
+diagnostics/hybrid_failed_trajectories.csv
+diagnostics/stage_A_150_episode_results.csv
+diagnostics/test_output.log
+diagnostics/final_eval_run.log
+diagnostics/__pycache__/
+diagnostics/clearance_analysis/
+diagnostics/oscillation_cases/
+
+# ─── Temporary / one-off test scripts ─────────────────────────────────────────
 smoke_test_*.py
 test_*.py
 verify_transcript.py
 check*.py
 fix_initial_pose.py
 prepare_training.py
+hang_test.log
+fine_tune_output.log
+
+# ROS2 colcon build output (auto-generated, never commit)
+install/

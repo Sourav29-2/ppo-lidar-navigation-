@@ -1,0 +1,20 @@
+========================================
+PHASE 5 COLLISION ROOT CAUSE REPORT
+========================================
+
+Total Collisions Analyzed: 25
+
+CAUSES BREAKDOWN:
+- Late obstacle reaction: 14
+- Nav2 path itself unsafe: 11
+
+========================================
+FINAL ANALYSIS
+========================================
+#1 collision cause: Late obstacle reaction
+#2 collision cause: Nav2 path itself unsafe
+PPO/local-control failures: 14
+Nav2/path failures: 11
+Collisions ON Nav2 path: 23
+Collisions OFF Nav2 path (deviating): 2
+SINGLE issue we should target next: Late obstacle reaction via tighter safety margins in local control.

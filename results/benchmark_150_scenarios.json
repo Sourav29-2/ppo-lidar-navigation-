@@ -1,0 +1,2102 @@
+[
+    {
+        "scenario_id": "EASY / OPEN_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -1.6333567409713652,
+            -2.507791082004232
+        ],
+        "random_seed": 567503,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.061530966088319,
+            -0.8724050074828082
+        ],
+        "random_seed": 598308,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -5.101565983874287,
+            -2.398497225679421
+        ],
+        "random_seed": 473410,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.1250287268259616,
+            1.4785202049736978
+        ],
+        "random_seed": 465193,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.32112856561002,
+            1.5243186254056966
+        ],
+        "random_seed": 331686,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            6.440067023629744,
+            0.6927901362352956
+        ],
+        "random_seed": 931988,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            6.565094381516354,
+            -0.07518089881763557
+        ],
+        "random_seed": 316336,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.6438873708519854,
+            -2.4025749358452027
+        ],
+        "random_seed": 273773,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.61719902035609,
+            -2.1683028008357095
+        ],
+        "random_seed": 64679,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.478684657680814,
+            1.7524346588457078
+        ],
+        "random_seed": 5022,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_11",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.8866978368582296,
+            -5.246964884059488
+        ],
+        "random_seed": 806405,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_12",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.3139932027935,
+            -3.5913118126305363
+        ],
+        "random_seed": 217928,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_13",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.25857610801026387,
+            -4.320314454727341
+        ],
+        "random_seed": 607676,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_14",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            1.6668060574584782,
+            -4.36267447607089
+        ],
+        "random_seed": 495630,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_15",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.8980863168599282,
+            -3.7610914569763128
+        ],
+        "random_seed": 344343,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_16",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            2.0179006682291356,
+            -4.8843883696291766
+        ],
+        "random_seed": 85571,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_17",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.8731148521334642,
+            -1.8187575778611997
+        ],
+        "random_seed": 473359,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_18",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -1.3689915170721774,
+            -4.97056733207271
+        ],
+        "random_seed": 275947,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_19",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.443486057665814,
+            0.7807643214243254
+        ],
+        "random_seed": 935490,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_20",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.10922582088535249,
+            -2.4984330495557128
+        ],
+        "random_seed": 366994,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_21",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.947811130745423,
+            -4.981053000942656
+        ],
+        "random_seed": 577832,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_22",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -1.8276506157629617,
+            -2.297265634887135
+        ],
+        "random_seed": 331463,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_23",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.24383551673044013,
+            -7.3650895894300445
+        ],
+        "random_seed": 983837,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_24",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            2.5516995070478727,
+            -2.2869779587764234
+        ],
+        "random_seed": 422678,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_25",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.34262622619907535,
+            -4.9672703936651255
+        ],
+        "random_seed": 124175,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_26",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -1.1125218476017118,
+            -5.054556050922266
+        ],
+        "random_seed": 533977,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_27",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.4874671086325195,
+            0.26093277771832846
+        ],
+        "random_seed": 406818,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_28",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            7.199972405991355,
+            0.05213673198170454
+        ],
+        "random_seed": 177426,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_29",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.863542604377415,
+            1.7492778515857648
+        ],
+        "random_seed": 632115,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "EASY / OPEN_30",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.5593005510660798,
+            -4.835818402639044
+        ],
+        "random_seed": 114889,
+        "scenario_category": "EASY / OPEN"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.843307781968206,
+            -4.2041193936431025
+        ],
+        "random_seed": 957885,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.183704952909286,
+            5.124614174828855
+        ],
+        "random_seed": 203828,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.765451917612295,
+            -5.234904581123911
+        ],
+        "random_seed": 274571,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.182051187042024,
+            5.133219002630996
+        ],
+        "random_seed": 600558,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.650183770987252,
+            -4.297002200832351
+        ],
+        "random_seed": 147304,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.33435175376905213,
+            4.081606884459666
+        ],
+        "random_seed": 863029,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.6614890066420148,
+            3.7918369289314136
+        ],
+        "random_seed": 742562,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.632606656316673,
+            -5.2199951418324515
+        ],
+        "random_seed": 78253,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.5854634687260587,
+            -5.816425487849758
+        ],
+        "random_seed": 334831,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.07875937538106448,
+            3.187494175255357
+        ],
+        "random_seed": 943387,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_11",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.5020254078192155,
+            -0.12086965125113203
+        ],
+        "random_seed": 604677,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_12",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.53491869005683,
+            -4.891089110974547
+        ],
+        "random_seed": 51604,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_13",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.7766819364003545,
+            -0.3112733131055101
+        ],
+        "random_seed": 349140,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_14",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.11230706504005,
+            5.738014493742035
+        ],
+        "random_seed": 65531,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_15",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.0796674667220536,
+            -6.466043793352915
+        ],
+        "random_seed": 331636,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_16",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.5054597641440939,
+            2.89025744496427
+        ],
+        "random_seed": 66307,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_17",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.9485456765238967,
+            -5.066829135277144
+        ],
+        "random_seed": 454033,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_18",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.3017638568815295,
+            -5.324979881935137
+        ],
+        "random_seed": 668488,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_19",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            1.9680748209194632,
+            -2.162170271946451
+        ],
+        "random_seed": 312415,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_20",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.14157762694870846,
+            6.312630714739989
+        ],
+        "random_seed": 880435,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_21",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.3561843996468688,
+            6.093135224778696
+        ],
+        "random_seed": 389000,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_22",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.9957225121056312,
+            5.557485030956496
+        ],
+        "random_seed": 571602,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_23",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.6872048272224953,
+            2.0185718711605154
+        ],
+        "random_seed": 391616,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_24",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.2895365455585566,
+            4.634521467101729
+        ],
+        "random_seed": 683523,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_25",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.8846873637973229,
+            3.7906748285575165
+        ],
+        "random_seed": 448940,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_26",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.9003867162448165,
+            -4.260145675091901
+        ],
+        "random_seed": 545150,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_27",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            6.626965398229068,
+            1.8367548070561757
+        ],
+        "random_seed": 297611,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_28",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.7736936197569821,
+            3.828990444063361
+        ],
+        "random_seed": 287066,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_29",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.0376944914471924,
+            5.909089570952589
+        ],
+        "random_seed": 936406,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "WALL-BLOCKED_30",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.471266454794273,
+            1.923994550170477
+        ],
+        "random_seed": 768029,
+        "scenario_category": "WALL-BLOCKED"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.9623459351011521,
+            7.406952502191314
+        ],
+        "random_seed": 170591,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.3535667989862405,
+            -3.5547970703840237
+        ],
+        "random_seed": 284444,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.576566605717329,
+            -3.6953463900821304
+        ],
+        "random_seed": 130712,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.232522310948365,
+            -3.591590335149813
+        ],
+        "random_seed": 328254,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -5.041720702763757,
+            -4.56717853568528
+        ],
+        "random_seed": 691333,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.5665652871567026,
+            -5.51955465287776
+        ],
+        "random_seed": 605385,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.091150979631326,
+            2.4420185230041898
+        ],
+        "random_seed": 700404,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            1.4147243533841647,
+            3.5808992403131095
+        ],
+        "random_seed": 956785,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.506734663580714,
+            3.669120033180524
+        ],
+        "random_seed": 925676,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            2.728264454466588,
+            3.236258165500096
+        ],
+        "random_seed": 974736,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_11",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            7.146956021369387,
+            3.6235721326376584
+        ],
+        "random_seed": 926312,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_12",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.238847048917428,
+            -7.333404422233422
+        ],
+        "random_seed": 911620,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_13",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.999441332265771,
+            -3.669647888594298
+        ],
+        "random_seed": 204773,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_14",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.3911896621574265,
+            3.587411015110158
+        ],
+        "random_seed": 429131,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_15",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -5.526407958400117,
+            4.509370134755045
+        ],
+        "random_seed": 83002,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_16",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.567794072605807,
+            5.854213676106314
+        ],
+        "random_seed": 243419,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_17",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.45359659757920723,
+            7.352542731493012
+        ],
+        "random_seed": 708869,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_18",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            1.361845156551953,
+            6.310860472202455
+        ],
+        "random_seed": 76119,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_19",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.682164459842249,
+            7.315936894917762
+        ],
+        "random_seed": 374287,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_20",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.137670198972129,
+            -7.415767348282147
+        ],
+        "random_seed": 652825,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_21",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.5661245147854213,
+            4.341007291265113
+        ],
+        "random_seed": 755830,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_22",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.628436496460127,
+            -7.043221181568074
+        ],
+        "random_seed": 600097,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_23",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.656288727772078,
+            -6.058632929143245
+        ],
+        "random_seed": 394473,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_24",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -1.3473199313819584,
+            3.4781652456350436
+        ],
+        "random_seed": 942099,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_25",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.395974966046495,
+            -7.409151292832289
+        ],
+        "random_seed": 971693,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_26",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            1.3323902055527626,
+            5.557416757522488
+        ],
+        "random_seed": 96383,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_27",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.544839269639581,
+            5.764167142868482
+        ],
+        "random_seed": 960743,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_28",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.9727176142196114,
+            -3.650520673493856
+        ],
+        "random_seed": 472410,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_29",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.904792607295766,
+            3.6548043176481415
+        ],
+        "random_seed": 472475,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "COMPLEX OBSTACLE_30",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.1311327610845274,
+            2.414063893215296
+        ],
+        "random_seed": 915990,
+        "scenario_category": "COMPLEX OBSTACLE"
+    },
+    {
+        "scenario_id": "TOP_LEFT_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.4674544511877015,
+            7.3070008234290205
+        ],
+        "random_seed": 188638,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.347915755637752,
+            3.593674308214975
+        ],
+        "random_seed": 993015,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.212489619563937,
+            4.274681602745275
+        ],
+        "random_seed": 336408,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.243625741358973,
+            6.374362191714738
+        ],
+        "random_seed": 445938,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.2592918167848968,
+            5.319099529197119
+        ],
+        "random_seed": 546936,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.1852439163418995,
+            3.7915713855113102
+        ],
+        "random_seed": 137566,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.2077693983350137,
+            7.290228389898496
+        ],
+        "random_seed": 666627,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.5397631123979805,
+            3.7830874212271066
+        ],
+        "random_seed": 92858,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.609342744346786,
+            2.2110013207681036
+        ],
+        "random_seed": 261720,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_LEFT_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.727081664630305,
+            5.286971596043489
+        ],
+        "random_seed": 366013,
+        "scenario_category": "TOP_LEFT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.6912744829162536,
+            4.287105414690626
+        ],
+        "random_seed": 984521,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.019163579343639,
+            3.7220299747414134
+        ],
+        "random_seed": 577596,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            7.401668920722464,
+            2.010361701250132
+        ],
+        "random_seed": 335716,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            2.8481993415482822,
+            4.300987101573354
+        ],
+        "random_seed": 277548,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            6.871268300097837,
+            4.4859268626189195
+        ],
+        "random_seed": 862842,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.63633519453629,
+            4.4993301066892775
+        ],
+        "random_seed": 102060,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.4171456308553845,
+            3.811738679488387
+        ],
+        "random_seed": 511012,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.392021074287567,
+            4.550431197880696
+        ],
+        "random_seed": 538780,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.4219086591650214,
+            6.03614256867371
+        ],
+        "random_seed": 387431,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "TOP_RIGHT_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.6844781494711984,
+            5.6740278788416125
+        ],
+        "random_seed": 675867,
+        "scenario_category": "TOP_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.025223025816641,
+            -2.077665789399627
+        ],
+        "random_seed": 12034,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -7.1291491239531615,
+            -4.564774115751276
+        ],
+        "random_seed": 923268,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -5.627355414584502,
+            -2.102771177254675
+        ],
+        "random_seed": 316237,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.082826694942549,
+            -7.339031974973978
+        ],
+        "random_seed": 646384,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.399412140027271,
+            -6.215597348776632
+        ],
+        "random_seed": 647761,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.8440885386887,
+            -3.8327187392091884
+        ],
+        "random_seed": 389779,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.300201402825428,
+            -5.702350554003324
+        ],
+        "random_seed": 686344,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -5.589704283250791,
+            -4.630286614051906
+        ],
+        "random_seed": 401145,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -7.05375172694056,
+            -4.621391889368414
+        ],
+        "random_seed": 770776,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_LEFT_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.340864273329404,
+            -2.4329408376824877
+        ],
+        "random_seed": 441958,
+        "scenario_category": "BOTTOM_LEFT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            2.5219241607969325,
+            -2.1503566551497038
+        ],
+        "random_seed": 560372,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.464926102360633,
+            -5.894406020362995
+        ],
+        "random_seed": 163410,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.928723099813259,
+            -2.206180961717618
+        ],
+        "random_seed": 580778,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.274704632084559,
+            -4.553388716014129
+        ],
+        "random_seed": 672200,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.275274061372428,
+            -4.378079385281263
+        ],
+        "random_seed": 500135,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            6.923015149873786,
+            -2.0191817275556314
+        ],
+        "random_seed": 898525,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.305383768371433,
+            -3.589271949703938
+        ],
+        "random_seed": 429046,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.962614934848784,
+            -3.6720200763585544
+        ],
+        "random_seed": 86521,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            4.34981041794221,
+            -4.399690970632814
+        ],
+        "random_seed": 461491,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "BOTTOM_RIGHT_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            2.2835008858609758,
+            -2.436738431819063
+        ],
+        "random_seed": 521209,
+        "scenario_category": "BOTTOM_RIGHT"
+    },
+    {
+        "scenario_id": "RANDOM_1",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.569474317017659,
+            -1.6264310776215378
+        ],
+        "random_seed": 376647,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_2",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            2.6432071414786185,
+            2.2511357801352974
+        ],
+        "random_seed": 662301,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_3",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            3.6137999472154685,
+            -5.619209961892431
+        ],
+        "random_seed": 603029,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_4",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.895190356747645,
+            2.406475123752774
+        ],
+        "random_seed": 275527,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_5",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.9224593587525359,
+            -5.016722853963796
+        ],
+        "random_seed": 138715,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_6",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.96267340480819,
+            -1.0451967592836808
+        ],
+        "random_seed": 101171,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_7",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.930581376831794,
+            1.3267198098342414
+        ],
+        "random_seed": 768542,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_8",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            0.07367378360559118,
+            -1.5472936262997372
+        ],
+        "random_seed": 773778,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_9",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -2.6090550240975325,
+            1.95174275694376
+        ],
+        "random_seed": 751484,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_10",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -6.375732129013365,
+            -1.7765293205441568
+        ],
+        "random_seed": 962763,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_11",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -3.7428096740871193,
+            6.914738245315844
+        ],
+        "random_seed": 463854,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_12",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -1.2027512604839197,
+            -4.116773158291309
+        ],
+        "random_seed": 413980,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_13",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -4.717219036555694,
+            1.334917841954043
+        ],
+        "random_seed": 106948,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_14",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.839856943279701,
+            -4.505824335776947
+        ],
+        "random_seed": 842138,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_15",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.699119930955192,
+            0.9006768904203338
+        ],
+        "random_seed": 384902,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_16",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -1.4170623620350364,
+            -2.272931952560711
+        ],
+        "random_seed": 670630,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_17",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            -0.3437320230074409,
+            -1.6287705478189918
+        ],
+        "random_seed": 388546,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_18",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            7.308793436124796,
+            4.501565740651781
+        ],
+        "random_seed": 559246,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_19",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            5.957671753869606,
+            -3.576585868161244
+        ],
+        "random_seed": 877128,
+        "scenario_category": "RANDOM"
+    },
+    {
+        "scenario_id": "RANDOM_20",
+        "start_position": [
+            0.0,
+            0.0
+        ],
+        "start_orientation": 0.0,
+        "goal_position": [
+            6.962781360424823,
+            -1.7212904818562875
+        ],
+        "random_seed": 323274,
+        "scenario_category": "RANDOM"
+    }
+]

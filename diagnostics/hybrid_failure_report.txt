@@ -1,0 +1,42 @@
+========================================
+PHASE 5 DIAGNOSTICS REPORT
+========================================
+
+Environment Success Threshold : 0.50 m
+Evaluation Success Threshold  : 0.25 m
+
+Overall Success   : 88 / 137 (64.2%)
+Overall Collision : 36 / 137 (26.3%)
+Overall Timeout   : 13 / 137 (9.5%)
+
+========================================
+FAILURE BREAKDOWN
+========================================
+COLLISION                 | 25 | 51.0%
+WALL_BLOCKED_FAILURE      | 16 | 32.7%
+TIMEOUT                   | 07 | 14.3%
+LOW_PROGRESS_STRICT       | 01 | 2.0%
+
+========================================
+WALL-BLOCKED FAILURE BREAKDOWN
+========================================
+WALL_BLOCKED_FAILURE      | 16 | 94.1%
+LOW_PROGRESS_STRICT       | 01 | 5.9%
+
+========================================
+FINAL CONCLUSION
+========================================
+1. What is the most common failure mode?
+   COLLISION
+2. What is the second most common?
+   WALL_BLOCKED_FAILURE
+3. How many failures are genuinely due to PPO local control?
+   25
+4. How many are due to Nav2/path handling?
+   0
+5. How many are wall-navigation failures?
+   17
+6. Does the hybrid model remain strong under the strict 0.25 m criterion?
+   Yes, success rate is 64.2%.
+7. Which specific failure behavior should be targeted in the next fine-tuning experiment?
+   COLLISION

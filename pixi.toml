@@ -23,7 +23,17 @@ env = {
 
 
 [tasks]
-clean = "killall -9 gzserver gzclient rviz2 || echo 'Clean!'"
+# ── Demo ─────────────────────────────────────────────────────────────────────
+demo    = "python demo.py"
+
+# ── Training ─────────────────────────────────────────────────────────────────
+train   = "python training/train_phase5_safety.py"
+
+# ── Evaluation ───────────────────────────────────────────────────────────────
+eval    = "python evaluation/eval_final_phase5.py"
+
+# ── Cleanup ───────────────────────────────────────────────────────────────────
+clean   = "killall -9 gzserver gzclient rviz2 || echo 'All simulation processes stopped.'"
 
 [dependencies]
 ros-humble-turtlesim = ">=1.4.3,<2"
