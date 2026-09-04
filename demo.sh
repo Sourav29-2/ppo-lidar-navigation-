@@ -65,10 +65,7 @@ ros2 launch urdf_test launch_sim_gazebo_test_robo.launch.py &
 GAZEBO_PID=$!
 sleep 5
 
-echo -e "${GREEN}[2/5]${NC} Starting SLAM Toolbox..."
-ros2 launch slam_toolbox online_async_launch.py use_sim_time:=true &
-SLAM_PID=$!
-sleep 3
+# (SLAM is disabled during navigation because we are using the pre-saved full map + AMCL)
 
 echo -e "${GREEN}[3/5]${NC} Starting Nav2 stack..."
 ros2 launch urdf_test nav2.launch.py &
@@ -101,6 +98,6 @@ python "$PROJECT_WS/demo.py"
 # ── Cleanup on exit ───────────────────────────────────────────────────────────
 echo ""
 echo "Shutting down simulation stack..."
-kill $RVIZ_PID $NAV2_PID $SLAM_PID $GAZEBO_PID 2>/dev/null || true
+kill $RVIZ_PID $NAV2_PID $GAZEBO_PID 2>/dev/null || true
 wait 2>/dev/null
 echo "✅ All processes stopped. Goodbye!"
