@@ -16,11 +16,15 @@ def generate_launch_description():
         launch_arguments={'use_sim_time': 'true'}.items()
     )
 
-    # 2. Include Gazebo Classic Launch file
+    # 2. Include Gazebo Classic Launch file with the obstacles world
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
-        ])
+        ]),
+        launch_arguments={
+            'use_sim_time': 'true',
+            'world': os.path.join(get_package_share_directory(package_name), 'worlds', 'obstacles.world')
+        }.items()
     )
 
     # 3. Run spawn_entity.py node
