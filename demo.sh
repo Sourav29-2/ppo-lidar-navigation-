@@ -71,11 +71,7 @@ echo -e "${GREEN}[3/5]${NC} Starting Nav2 stack..."
 ros2 launch urdf_test nav2.launch.py &
 NAV2_PID=$!
 
-# Wait for AMCL to come online, then publish the initial pose (x=0, y=0)
-# This prevents the robot from appearing at the corner of the map in RViz!
-sleep 5
-ros2 topic pub -1 /initialpose geometry_msgs/PoseWithCovarianceStamped "{header: {frame_id: 'map'}, pose: {pose: {position: {x: 0.0, y: 0.0, z: 0.0}, orientation: {w: 1.0}}}}" > /dev/null 2>&1 &
-sleep 4
+# (AMCL now initializes automatically via set_initial_pose in nav2_params.yaml)
 
 echo -e "${GREEN}[4/5]${NC} Opening RViz..."
 RVIZ_CONFIG="$PROJECT_WS/src/urdf_test/config/rviz_demo.rviz"
