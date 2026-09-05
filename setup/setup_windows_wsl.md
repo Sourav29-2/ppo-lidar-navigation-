@@ -49,6 +49,31 @@ Then in the RViz window that opens, click **"Nav2 Goal"** and click anywhere on 
 
 ---
 
+## Step 4 — Tips & Recovery During Demo
+
+### 1. Opening a New Ubuntu Tab
+When opening a new tab in Windows Terminal, it defaults to **PowerShell**. 
+To open a new Ubuntu tab instead:
+1. Click the small **downward arrow (v)** next to the `+` button in the tab bar.
+2. Select **Ubuntu** from the dropdown menu.
+
+### 2. Manual Human Override (Teleop)
+If the robot gets stuck during a presentation, you can take manual control. Open a new Ubuntu tab (as shown above) and run:
+```bash
+cd ~/ppo-lidar-navigation-
+pixi shell
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
+Use `I`, `J`, `K`, `L` to drive out of the corner. The AI will pause while you drive and instantly take over again when you stop pressing keys!
+
+### 3. Clearing the Workspace Cache
+If Gazebo or RViz starts acting glitchy, gets stuck on a white screen, or loads broken maps from previous runs, you can wipe the temporary ROS/Gazebo cache files to force a clean start:
+```bash
+rm -rf ~/.gazebo ~/.rviz2 ~/.ros/log
+```
+
+---
+
 ## Notes
 
 - **Display (GUI)**: Windows 11 supports WSLg natively (Gazebo/RViz windows appear automatically).
