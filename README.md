@@ -10,7 +10,7 @@
 
 ---
 
-> 🎥 **[Watch full demo recording (YouTube)](https://youtube.com/YOUR_DEMO_LINK)**  
+> 🎥 **[Watch full demo recording (YouTube)](https://youtu.be/gyJQ95sUa60)**  
 > 📊 **[Full results & failure analysis](RESULTS.md)**  
 > 🏗️ **[System architecture deep-dive](ARCHITECTURE.md)**
 
