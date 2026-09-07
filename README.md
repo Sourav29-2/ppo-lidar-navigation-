@@ -233,7 +233,7 @@ pixi run bash evaluation/run_final_eval.sh
 ## Contact
 
 **Sourav Kumar**  
-📧 sourav9835359245@gmail.com  
+📧 sourav710075@gmail.com  
 🐙 [GitHub](https://github.com/Sourav29-2)
 
 Open to robotics engineering roles, autonomous systems research, and collaborations.
