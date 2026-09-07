@@ -56,7 +56,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new sensors,
 training on new environments, or extending the policy.
 
 ---
-
+## To see how the robot moves you can see the output folder in the drive link given below
+[link text](https://drive.google.com/drive/u/0/folders/1ZiBdzPy2vfgXyjkTS5gR2GcQsmCVGR3Q)
 ## Want to collaborate?
 
 If you're working on mobile robotics, autonomous navigation, or RL-based control
