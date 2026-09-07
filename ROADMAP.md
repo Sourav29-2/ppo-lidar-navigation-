@@ -48,8 +48,6 @@ Pull it to your robot, add your sensors, and build on it.
 - [ ] Prometheus + Grafana dashboard for live navigation metrics
 - [ ] Automated regression testing on every training run
 
-## To see how the robot moves you can see the output folder in the drive link given below
-[![Google Drive](https://shields.io)](https://drive.google.com/drive/u/0/folders/1ZiBdzPy2vfgXyjkTS5gR2GcQsmCVGR3Q)
 ---
 
 ## Contributing
